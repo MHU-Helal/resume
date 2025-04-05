@@ -64,7 +64,7 @@
       }
 
       #skills {
-        font-size: 12px;
+        font-size: 16px;
       }
 
       li {
@@ -250,11 +250,7 @@
               <!-- Personal Info and Resume Content -->
               <div class="text-center mb-4 content-section">
                 <h1 class="display-4" id="name"></h1>
-                <p class="lead text-muted position">
-                  <strong class="htmlSign"
-                    >&lt;<span id="position"></span>/&gt;</strong
-                  >
-                </p>
+                <p class="lead m-0 text-muted position"><strong class="htmlSign">&lt;<span id="position"></span>/&gt;</strong></p>
                 <p class="lead fw-bold skills"><span id="skills"></span></p>
                 <p class="text-center contactDetails">
                   <a id="mobile"></a> | <a id="email"></a> |
@@ -522,15 +518,15 @@
           completionDate: "April 2025",
           modules: [
             { name: "Introduction to Computing", duration: "40 hrs" },
-            { name: "HTML, CSS3, Bootstrap", duration: "100 hrs" },
+            { name: "HTML 5, CSS3, Bootstrap 5", duration: "100 hrs" },
             { name: "JavaScript", duration: "80 hrs" },
             {
               name: "Database-Driven Web Applications using PHP, MySQL",
               duration: "148 hrs",
             },
             { name: "jQuery, WordPress", duration: "120 hrs" },
-            { name: "React", duration: "100 hrs" },
             { name: "Laravel", duration: "100 hrs" },
+            { name: "React", duration: "100 hrs" },
             { name: "VueJS", duration: "100 hrs" },
           ],
         },
@@ -628,7 +624,15 @@
         // Update Name and Position
         document.getElementById("name").innerText = data.name;
         document.getElementById("position").innerText = data.position;
-        document.getElementById("skills").innerText = `[${data.skills}]`;
+        let skills = "";
+        data.skills.map((item, i)=>{
+          if (i!==data.skills.length-1) {
+            skills += item + ", ";
+          }else{
+            skills += item;
+          }
+        })
+        document.getElementById("skills").innerText = `[${skills}]`;
 
         // Update Contact Information
         document.getElementById("mobile").innerText = "Mobile";
