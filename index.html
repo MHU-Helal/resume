@@ -58,6 +58,7 @@
         /* position: relative; */
       }
 
+
       section > div {
         margin-bottom: 5px;
       }
@@ -142,8 +143,14 @@
         text-align: center;
       }
 
+      .shortSection {
+          page-break-before: auto !important;
+          page-break-after: auto !important;
+          break-inside: avoid !important; /* Prevent content from breaking within a section */
+        }
+
       /* Print styles */
-      @media print {
+      /* @media print {
         body {
           width: 100%;
           margin: 0;
@@ -167,11 +174,11 @@
         .printSections {
           display: none;
         }
-        /* Ensure sections break properly */
+        /* Ensure sections break properly 
         .shortSection {
           page-break-before: auto !important;
           page-break-after: auto !important;
-          break-inside: avoid !important; /* Prevent content from breaking within a section */
+          break-inside: avoid !important; /* Prevent content from breaking within a section
         }
         #resumeBody {
           box-shadow: none !important;
@@ -182,7 +189,7 @@
           padding: 0 !important;
         }
         .container {
-          width: 100% !important; /* Make container full width when printing */
+          width: 100% !important; /* Make container full width when printing
           padding: 0 !important;
         }
         .row {
@@ -190,27 +197,27 @@
           margin: 0;
         }
         .col-lg-8 {
-          width: 100% !important; /* Make the content take up the full width */
+          width: 100% !important; /* Make the content take up the full width 
           margin: 0;
         }
         .card {
-          width: 100% !important; /* Full-width card for printing */
+          width: 100% !important; /* Full-width card for printing 
           margin: 0;
         }
         .card-body {
           width: 100% !important;
         }
         .photo-section {
-          margin: 0; /* Remove margin for the photo section */
+          margin: 0; /* Remove margin for the photo section 
         }
         .content-section {
           padding: 0 20px;
         }
         .signature-section img {
-          width: 200px; /* Adjust signature image for printing */
+          width: 200px; /* Adjust signature image for printing 
         }
         .section-header {
-          font-size: 18px; /* Increase font size for print */
+          font-size: 18px; /* Increase font size for print 
         }
         table {
           width: 100%;
@@ -222,7 +229,7 @@
         table th {
           background-color: #f1f1f1;
         }
-      }
+      } */
     </style>
   </head>
   <body>
@@ -248,7 +255,7 @@
                     >&lt;<span id="position"></span>/&gt;</strong
                   >
                 </p>
-                <p class="lead fw-bold" id="skills"></p>
+                <p class="lead fw-bold skills"><span id="skills"></span></p>
                 <p class="text-center contactDetails">
                   <a id="mobile"></a> | <a id="email"></a> |
                   <a id="whatsapp"></a> |
@@ -494,10 +501,6 @@
           "Vue",
           "React",
           "GitHub",
-          "HTML5",
-          "CSS3",
-          "Bootstrap 5",
-          "Tailwind CSS",
         ],
         mobile: "01713227490",
         email: "dev.m.helal@gmail.com",
@@ -548,7 +551,7 @@
               "Hospital Management System with features like Patients, Doctors, Appointments, Accounts, Billing, and Reports, available in two versions: Raw PHP, and Php & React.",
             tools:
               "PHP, React, MySQL, jQuery, JavaScript, HTML, CSS3, Bootstrap",
-            link: "http://dev.decodemh.com/php",
+            link: "https://reviveme.decodemh.com/",
             link2: "http://dev.decodemh.com/react",
           },
           {
@@ -562,9 +565,9 @@
           {
             name: "Online Resume",
             details:
-              "Resume design for easy sharing. Easily updatable by simple changing the JavaScript Variable!",
+              "Resume design for easy sharing. Easily updatable by simply updating the JavaScript Variable!",
             tools: "JavaScript, HTML, CSS3, Bootstrap",
-            link: "https://schooling.decodemh.com/apps/siamSchedule.html",
+            link: "https://mhu-helal.github.io/resume/",
           },
           {
             name: "Local Sahri & Iftar Time App",
@@ -584,19 +587,19 @@
             details:
               "Small application to learn letters & numbers in Arabic, Bengali, English",
             tools: "JavaScript, HTML, CSS3, Bootstrap",
-            link: "http://dev.decodemh.com",
+            link: "http://schooling.decodemh.com",
           },
           {
             name: "Static HTML Page with Bootstrap",
             details: "Landing page design for real-estate",
             tools: "HTML, CSS3, Bootstrap",
-            link: "http://wp.decodemh.com",
+            link: "",
           },
           {
             name: "CSS Animation",
             details: "CSS Animation with SVG graphics.",
             tools: "HTML, CSS3, SVG, Bootstrap",
-            link: "http://wp.decodemh.com",
+            link: "https://mhu-helal.github.io/Animation/",
           },
         ],
         education: [
@@ -614,7 +617,7 @@
           presentAddress: "338/1, East-Nakhalpara, Tejgaon, Dhaka-1215",
           permanentAddress: "Sobujpara, Brahmonpara, Cumilla, Chattogram",
         },
-        passportPhoto: "./assets/Helal.png", // If there's no photo, leave it empty or null
+        passportPhoto: "", // If there's no photo, leave it empty or null
         signatureImage: "", // Same for signature image
         signatureName: "Md. Helal Uddin",
         signatureDate: "26 March, 2025",
