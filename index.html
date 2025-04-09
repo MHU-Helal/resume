@@ -1,156 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/Favicon.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Delius&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Gamja+Flower&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Splash&family=Water+Brush&display=swap"
-      rel="stylesheet"
-    />
-    <title>Md. Helal Uddin - Full Stack Web Developer</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      ::selection {
-        color: burlywood;
-        background-color: #2c2c2c23;
-      }
-      body {
-        width: 100%;
-        /* background: black;
-        background: url(BG.jpg) no-repeat center center fixed;*/
-      }
 
-      /* #resumeBody{
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/Favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Delius&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Gamja+Flower&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Splash&family=Water+Brush&display=swap"
+    rel="stylesheet" />
+  <title>Md. Helal Uddin - Full Stack Web Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ::selection {
+      color: burlywood;
+      background-color: #2c2c2c23;
+    }
+
+    body {
+      width: 100%;
+      /* background: black;
+        background: url(BG.jpg) no-repeat center center fixed;*/
+    }
+
+    /* #resumeBody{
         background: url(BG.jpg) no-repeat center center fixed;
       } */
 
-      .contactDetails {
-        display: block;
-      }
+    .contactDetails {
+      display: block;
+    }
 
-      .printContactDetails {
-        display: none;
-      }
+    .printContactDetails {
+      display: none;
+    }
 
-      .htmlSign {
-        font-family: "Water Brush";
-        font-size: 44px;
-        /* margin-top: 10px; */
-        /* position: absolute; */
-        /* top: -28px; */
-        /* left: -10px; */
-      }
+    .htmlSign {
+      font-family: "Water Brush";
+      font-size: 44px;
+      /* margin-top: 10px; */
+      /* position: absolute; */
+      /* top: -28px; */
+      /* left: -10px; */
+    }
 
-      #position {
-        font-family: "sour gummy" !important;
-        font-size: 32px;
-        /* position: relative; */
-      }
+    #position {
+      font-family: "sour gummy" !important;
+      font-size: 32px;
+      /* position: relative; */
+    }
 
 
-      section > div {
-        margin-bottom: 5px;
-      }
+    section>div {
+      margin-bottom: 5px;
+    }
 
-      #skills {
-        font-size: 16px;
-      }
+    #skills {
+      font-size: 16px;
+    }
 
-      li {
-        list-style-type: circle;
-        margin-left: 25px;
-      }
-      li::marker {
-        color: #007bff;
-      }
-      .section-header {
-        background-color: #007bff;
-        color: white;
-        padding: 8px 16px;
-        margin-top: 20px;
-        border-radius: 5px;
-      }
-      table {
-        width: 100%;
-      }
-      table td,
-      table th {
-        padding: 8px;
-        text-align: left;
-        vertical-align: middle;
-      }
-      .table th {
-        background-color: #f1f1f1;
-      }
-      .table-bordered td,
-      .table-bordered th {
-        border: 1px solid #ddd;
-      }
-      .photo-section {
-        width: 140px;
-        height: 140px;
-        border-radius: 15%;
-        overflow: hidden;
-        margin-top: 30px;
-        margin-right: 15px;
-      }
-      .photo-section img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      .signature-section {
-        text-align: center;
-        margin-top: 50px;
-        position: relative;
-      }
+    li {
+      list-style-type: circle;
+      margin-left: 25px;
+    }
 
-      #signature-name {
-        font-family: "Gamja Flower";
-        font-size: 24px;
-      }
+    li::marker {
+      color: #007bff;
+    }
 
-      #signature-date {
-        position: absolute;
-        top: 30px;
-        left: 10px;
-      }
+    .section-header {
+      background-color: #007bff;
+      color: white;
+      padding: 8px 16px;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
 
-      .signature-section img {
-        width: 100px;
-        height: 40px;
-        object-fit: contain;
-        /* background: url(BG.jpg) no-repeat center center fixed; */
-        /* filter:blur(1px) */
-        /* mix-blend-mode:overlay; */
-      }
-      .content-section {
-        margin-top: 20px;
-      }
+    table {
+      width: 100%;
+    }
 
-      #declaration {
-        text-align: center;
-      }
+    table td,
+    table th {
+      padding: 8px;
+      text-align: left;
+      vertical-align: middle;
+    }
 
-      .shortSection {
-          page-break-before: auto !important;
-          page-break-after: auto !important;
-          break-inside: avoid !important; /* Prevent content from breaking within a section */
-        }
+    .table th {
+      background-color: #f1f1f1;
+    }
 
-      /* Print styles */
-      /* @media print {
+    .table-bordered td,
+    .table-bordered th {
+      border: 1px solid #ddd;
+    }
+
+    .photo-section {
+      width: 140px;
+      height: 140px;
+      border-radius: 15%;
+      overflow: hidden;
+      margin-top: 30px;
+      margin-right: 15px;
+    }
+
+    .photo-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .signature-section {
+      text-align: center;
+      margin-top: 50px;
+      position: relative;
+    }
+
+    #signature-name {
+      font-family: "Gamja Flower";
+      font-size: 24px;
+    }
+
+    #signature-date {
+      position: absolute;
+      top: 30px;
+      left: 10px;
+    }
+
+    .signature-section img {
+      width: 100px;
+      height: 40px;
+      object-fit: contain;
+      /* background: url(BG.jpg) no-repeat center center fixed; */
+      /* filter:blur(1px) */
+      /* mix-blend-mode:overlay; */
+    }
+
+    .content-section {
+      margin-top: 20px;
+    }
+
+    #declaration {
+      text-align: center;
+    }
+
+    .shortSection {
+      page-break-before: auto !important;
+      page-break-after: auto !important;
+      break-inside: avoid !important;
+      /* Prevent content from breaking within a section */
+    }
+
+    /* Print styles */
+    /* @media print {
         body {
           width: 100%;
           margin: 0;
@@ -230,577 +240,552 @@
           background-color: #f1f1f1;
         }
       } */
-    </style>
-  </head>
-  <body>
-    <div class="container py-5" id="resumeBody">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <div class="card shadow-lg border-0 rounded" id="resumeContents">
-            <div class="card-body">
-              <!-- Passport Photo -->
-              <div id="photo-container" class="photo-section float-end d-none">
-                <img
-                  id="passport-photo"
-                  src=""
-                  alt="Full stack web developer"
-                />
-              </div>
+  </style>
+</head>
 
-              <!-- Personal Info and Resume Content -->
-              <div class="text-center mb-4 content-section">
-                <h1 class="display-4" id="name"></h1>
-                <p class="lead m-0 text-muted position"><strong class="htmlSign">&lt;<span id="position"></span>/&gt;</strong></p>
-                <p class="lead fw-bold skills"><span id="skills"></span></p>
-                <p class="text-center contactDetails">
-                  <a id="mobile"></a> | <a id="email"></a> |
-                  <a id="whatsapp"></a> |
-                  <a target="_blank" id="linkedin"></a> |
-                  <a target="_blank" id="github"></a> |
-                  <a target="_blank" id="portfolio"></a>
-                </p>
-                <p class="text-center printContactDetails">
-                  <span id="PrintMobile"></span> | <span id="PrintEmail"></span>
-                </p>
-                <p id="address"></p>
-              </div>
-
-              <!-- Career Objective -->
-              <section class="shortSection">
-                <div class="section-header">
-                  <strong>Career Objective</strong>
-                </div>
-                <p class="text-muted" id="career-objective"></p>
-              </section>
-
-              <!-- Career Summary -->
-              <section class="shortSection">
-                <div class="section-header">
-                  <strong>Career Summary</strong>
-                </div>
-                <ul id="career-summary" class="list-unstyled"></ul>
-              </section>
-
-              <!-- Professional Certifications -->
-              <section>
-                <div class="section-header">
-                  <strong>Professional Certifications</strong>
-                </div>
-                <table class="table table-bordered">
-                  <tr>
-                    <td colspan="2">
-                      <strong
-                        >Web Application Development with PHP and Frameworks
-                        (WDPF)</strong
-                      >
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><strong>Authority:</strong></td>
-                    <td id="authority"></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Duration:</strong></td>
-                    <td id="duration"></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Completed:</strong></td>
-                    <td id="completion-date"></td>
-                  </tr>
-                </table>
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Modules</th>
-                      <!-- <th>Duration (Hours)</th> -->
-                    </tr>
-                  </thead>
-                  <tbody id="modules-table"></tbody>
-                </table>
-              </section>
-
-              <!-- Professional Experience -->
-              <section>
-                <div class="section-header">
-                  <strong>Professional Experience</strong>
-                </div>
-                <table class="table table-bordered">
-                  <tr>
-                    <td colspan="2">
-                      <strong>Web Application Development with PHP and Frameworks (WDPF)</strong
-                      >
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><strong>Authority:</strong></td>
-                    <td id="authority"></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Duration:</strong></td>
-                    <td id="duration"></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Completed:</strong></td>
-                    <td id="completion-date"></td>
-                  </tr>
-                </table>
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Modules</th>
-                      <!-- <th>Duration (Hours)</th> -->
-                    </tr>
-                  </thead>
-                  <tbody id="modules-table"></tbody>
-                </table>
-              </section>
-
-              <!-- Software Projects -->
-              <section class="shortSection">
-                <div class="section-header">
-                  <strong>Software Projects</strong>
-                </div>
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Project Name</th>
-                      <th>Details</th>
-                      <th>Tools & Technologies</th>
-                      <th>Link</th>
-                    </tr>
-                  </thead>
-                  <tbody id="projects-table"></tbody>
-                </table>
-              </section>
-
-              <!-- Education -->
-              <section class="shortSection">
-                <div class="section-header"><strong>Education</strong></div>
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Degree</th>
-                      <th>Year</th>
-                    </tr>
-                  </thead>
-                  <tbody id="education-table"></tbody>
-                </table>
-              </section>
-
-              <!-- Academic & Other Certificates -->
-              <section class="shortSection printSections">
-                <div class="section-header">
-                  <strong
-                    ><a
-                      class="text-white"
-                      href="https://drive.google.com/drive/folders/12jPCc6LLx6qbKW0QCa2vrDKxC4q1szq-?usp=sharing"
-                      >Academic & Other Certificates</a
-                    ></strong
-                  >
-                </div>
-              </section>
-
-              <!-- Personal Information -->
-              <section>
-                <div class="section-header">
-                  <strong>Personal Information</strong>
-                </div>
-                <table class="table table-bordered">
-                  <tr>
-                    <td><strong>Father's Name:</strong></td>
-                    <td id="father-name"></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Mother's Name:</strong></td>
-                    <td id="mother-name"></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Date of Birth:</strong></td>
-                    <td id="dob"></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Blood Group:</strong></td>
-                    <td id="blood-group"></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Nationality:</strong></td>
-                    <td id="nationality"></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Present Address:</strong></td>
-                    <td id="present-address"></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Permanent Address:</strong></td>
-                    <td id="permanent-address"></td>
-                  </tr>
-                </table>
-              </section>
-
-              <!-- Language Skills -->
-              <section class="shortSection">
-                <div class="section-header">
-                  <strong>Language Skills</strong>
-                </div>
-                <ul id="Language Skills" class="list-unstyled">
-                  <li><strong>Bengali</strong>: Native</li>
-                  <li><strong>English</strong>: Good</li>
-                </ul>
-              </section>
-
-              <!-- Interests -->
-              <section class="shortSection">
-                <div class="section-header"><strong>Interests</strong></div>
-                <ul id="Interests" class="list-unstyled">
-                  <li>Traveling</li>
-                  <li>Adventure</li>
-                  <li>Repair & Recycle</li>
-                </ul>
-              </section>
-
-              <!-- Reference -->
-              <section class="shortSection">
-                <div class="section-header"><strong>Reference</strong></div>
-                <table class="table table-bordered">
-                  <tr>
-                    <td>
-                      <strong>Md. Tawhid Imdad</strong>
-                      <p>
-                        CTO, Intellect Software Ltd. <br />
-                        Phone: <a href="callto:01985426948">01985426948</a
-                        ><br />
-                        Email:
-                        <a href="mailto:tawhidimdad@gmail.com"
-                          >tawhidimdad@gmail.com</a
-                        ><br />
-                        Relation: Academic
-                      </p>
-                    </td>
-                    <td>
-                      <strong>Mohammad Moshaidul Islam</strong>
-                      <p>
-                        Project Consultant, IsDB-BISEW IT Scholarship Project<br />
-                        Phone: <a href="callto:01711071219">01711071219</a
-                        ><br />
-                        Email:
-                        <a href="mailto:moshaidul@gmail.com"
-                          >moshaidul@gmail.com</a
-                        ><br />
-                        Relation: Academic
-                      </p>
-                    </td>
-                  </tr>
-                </table>
-              </section>
-
-              <!-- Declaration -->
-              <section class="shortSection">
-                <div class="section-header"><strong>Declaration</strong></div>
-                <p class="text-muted" id="declaration">
-                  I hereby declare that the information provided in this resume
-                  is true to the best of my knowledge. In the event of any
-                  information being found false, my candidature stands to be
-                  cancelled.
-                </p>
-              </section>
-
-              <!-- Signature -->
-              <section
-                id="signature-section"
-                class="signature-section d-none float-end pe-5"
-              >
-                <!-- <img id="signature-image" src="" alt="Signature" /> -->
-                <p id="signature-name"></p>
-                <p id="signature-date"></p>
-              </section>
+<body>
+  <div class="container py-5" id="resumeBody">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="card shadow-lg border-0 rounded" id="resumeContents">
+          <div class="card-body">
+            <!-- Passport Photo -->
+            <div id="photo-container" class="photo-section float-end d-none">
+              <img id="passport-photo" src="" alt="Full stack web developer" />
             </div>
+
+            <!-- Personal Info and Resume Content -->
+            <div class="text-center mb-4 content-section">
+              <h1 class="display-4" id="name"></h1>
+              <p class="lead m-0 text-muted position"><strong class="htmlSign">&lt;<span
+                    id="position"></span>/&gt;</strong></p>
+              <p class="lead fw-bold skills"><span id="skills"></span></p>
+              <p class="text-center contactDetails">
+                <a id="mobile"></a> | <a id="email"></a> |
+                <a id="whatsapp"></a> |
+                <a target="_blank" id="linkedin"></a> |
+                <a target="_blank" id="github"></a> |
+                <a target="_blank" id="portfolio"></a>
+              </p>
+              <p class="text-center printContactDetails">
+                <span id="PrintMobile"></span> | <span id="PrintEmail"></span>
+              </p>
+              <p id="address"></p>
+            </div>
+
+            <!-- Career Objective -->
+            <section class="shortSection">
+              <div class="section-header">
+                <strong>Career Objective</strong>
+              </div>
+              <p class="text-muted" id="career-objective"></p>
+            </section>
+
+            <!-- Career Summary -->
+            <section class="shortSection">
+              <div class="section-header">
+                <strong>Career Summary</strong>
+              </div>
+              <ul id="career-summary" class="list-unstyled"></ul>
+            </section>
+
+            <!-- Professional Certifications -->
+            <section>
+              <div class="section-header">
+                <strong>Professional Certifications</strong>
+              </div>
+              <table class="table table-bordered">
+                <tr>
+                  <td colspan="2">
+                    <strong>Web Application Development with PHP and Frameworks
+                      (WDPF)</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Authority:</strong></td>
+                  <td id="authority"></td>
+                </tr>
+                <tr>
+                  <td><strong>Duration:</strong></td>
+                  <td id="duration"></td>
+                </tr>
+                <tr>
+                  <td><strong>Completed:</strong></td>
+                  <td id="completion-date"></td>
+                </tr>
+              </table>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Modules</th>
+                    <!-- <th>Duration (Hours)</th> -->
+                  </tr>
+                </thead>
+                <tbody id="modules-table"></tbody>
+              </table>
+            </section>
+
+            <!-- Professional Experience -->
+            <section>
+              <div class="section-header">
+                <strong>Professional Experience</strong>
+              </div>
+              <div class="px-3 m-0">
+                <p class="m-0 fw-bold" id="PE-Position">Junior Web Developer <span
+                    class="float-end text-primary PE-Duration">Jun 2024 - Present</span></p>
+                <p class="m-0 fw-regular" id="PE-Organization"><a href="http://www.intelsofts.com/">Intellect Software
+                    Ltd.</a></p>
+
+                <!-- <hr class="text-primary"> -->
+                <p class="mt-3 mb-0 fw-bold text-primary">Responsibilities:</p>
+                <ul>
+                  <li>Coordinated project design and development tasks.</li>
+                  <li>Developed and maintained web applications using PHP, Laravel, MySQL, and JavaScript.</li>
+                  <li>Responsible for debugging and troubleshooting web applications.</li>
+                </ul>
+              </div>
+              <hr class="text-primary">
+              <div class="px-3 m-0">
+                <p class="m-0 fw-bold" id="PE-Position">Remote Web Developer<span
+                    class="float-end text-primary PE-Duration"> 2023 - Jun 2024</span></p>
+                <p class="m-0 fw-regular" id="PE-Organization">Online Marketplaces</p>
+              </div>
+            </section>
+
+            <!-- Software Projects -->
+            <section class="shortSection">
+              <div class="section-header">
+                <strong>Software Projects</strong>
+              </div>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Project Name</th>
+                    <th>Details</th>
+                    <th>Tools & Technologies</th>
+                    <th>Link</th>
+                  </tr>
+                </thead>
+                <tbody id="projects-table"></tbody>
+              </table>
+            </section>
+
+            <!-- Education -->
+            <section class="shortSection">
+              <div class="section-header"><strong>Education</strong></div>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Degree</th>
+                    <th>Year</th>
+                  </tr>
+                </thead>
+                <tbody id="education-table"></tbody>
+              </table>
+            </section>
+
+            <!-- Academic & Other Certificates -->
+            <section class="shortSection printSections">
+              <div class="section-header">
+                <strong><a class="text-white"
+                    href="https://drive.google.com/drive/folders/12jPCc6LLx6qbKW0QCa2vrDKxC4q1szq-?usp=sharing">Academic
+                    & Other Certificates</a></strong>
+              </div>
+            </section>
+
+            <!-- Personal Information -->
+            <section>
+              <div class="section-header">
+                <strong>Personal Information</strong>
+              </div>
+              <table class="table table-bordered">
+                <tr>
+                  <td><strong>Father's Name:</strong></td>
+                  <td id="father-name"></td>
+                </tr>
+                <tr>
+                  <td><strong>Mother's Name:</strong></td>
+                  <td id="mother-name"></td>
+                </tr>
+                <tr>
+                  <td><strong>Date of Birth:</strong></td>
+                  <td id="dob"></td>
+                </tr>
+                <tr>
+                  <td><strong>Blood Group:</strong></td>
+                  <td id="blood-group"></td>
+                </tr>
+                <tr>
+                  <td><strong>Nationality:</strong></td>
+                  <td id="nationality"></td>
+                </tr>
+                <tr>
+                  <td><strong>Present Address:</strong></td>
+                  <td id="present-address"></td>
+                </tr>
+                <tr>
+                  <td><strong>Permanent Address:</strong></td>
+                  <td id="permanent-address"></td>
+                </tr>
+              </table>
+            </section>
+
+            <!-- Language Skills -->
+            <section class="shortSection">
+              <div class="section-header">
+                <strong>Language Skills</strong>
+              </div>
+              <ul id="Language Skills" class="list-unstyled">
+                <li><strong>Bengali</strong>: Native</li>
+                <li><strong>English</strong>: Good</li>
+              </ul>
+            </section>
+
+            <!-- Interests -->
+            <section class="shortSection">
+              <div class="section-header"><strong>Interests</strong></div>
+              <ul id="Interests" class="list-unstyled">
+                <li>Traveling</li>
+                <li>Adventure</li>
+                <li>Repair & Recycle</li>
+              </ul>
+            </section>
+
+            <!-- Reference -->
+            <section class="shortSection">
+              <div class="section-header"><strong>Reference</strong></div>
+              <table class="table table-bordered">
+                <tr>
+                  <td>
+                    <strong>Md. Tawhid Imdad</strong>
+                    <p>
+                      CTO, Intellect Software Ltd. <br />
+                      Phone: <a href="callto:01985426948">01985426948</a><br />
+                      Email:
+                      <a href="mailto:tawhidimdad@gmail.com">tawhidimdad@gmail.com</a><br />
+                      Relation: Academic
+                    </p>
+                  </td>
+                  <td>
+                    <strong>Mohammad Moshaidul Islam</strong>
+                    <p>
+                      Project Consultant, IsDB-BISEW IT Scholarship Project<br />
+                      Phone: <a href="callto:01711071219">01711071219</a><br />
+                      Email:
+                      <a href="mailto:moshaidul@gmail.com">moshaidul@gmail.com</a><br />
+                      Relation: Academic
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </section>
+
+            <!-- Declaration -->
+            <section class="shortSection">
+              <div class="section-header"><strong>Declaration</strong></div>
+              <p class="text-muted" id="declaration">
+                I hereby declare that the information provided in this resume
+                is true to the best of my knowledge. In the event of any
+                information being found false, my candidature stands to be
+                cancelled.
+              </p>
+            </section>
+
+            <!-- Signature -->
+            <section id="signature-section" class="signature-section d-none float-end pe-5">
+              <!-- <img id="signature-image" src="" alt="Signature" /> -->
+              <p id="signature-name"></p>
+              <p id="signature-date"></p>
+            </section>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script>
-      // Example Variables to Update the Resume
-      const data = {
-        name: "Md. Helal Uddin",
-        position: "Full Stack Web Developer",
-        skills: [
-          "Php",
-          "MySQL",
-          "Laravel",
-          "JavaScript",
-          "jQuery",
-          "Vue",
-          "React",
-          "GitHub",
+  <script>
+    // Example Variables to Update the Resume
+    const data = {
+      name: "Md. Helal Uddin",
+      position: "Full Stack Web Developer",
+      skills: [
+        "Php",
+        "MySQL",
+        "Laravel",
+        "JavaScript",
+        "jQuery",
+        "Vue",
+        "React",
+        "GitHub",
+      ],
+      mobile: "01713227490",
+      email: "dev.m.helal@gmail.com",
+      whatsapp: "01713227490",
+      linkedin: "https://www.linkedin.com/in/helalmhu/",
+      github: "https://github.com/MHU-Helal",
+      portfolio: "https://dev.decodemh.com",
+      address: "338/1, East-Nakhalpara, Tejgaon, Dhaka-1215",
+      careerObjective:
+        "Passionate PHP, MySQL, Laravel, and React.js developer with a strong commitment to continuous learning and self-improvement.",
+      careerSummary: [
+        "1+ years of experience in developing web applications.",
+        "Expertise in Raw PHP, Laravel, MySQL, WordPress, ReactJS, VueJS, JavaScript, jQuery, and Ajax.",
+        "Troubleshooting, debugging, and problem-solving capabilities.",
+      ],
+      certifications: {
+        authority: "IsDB-BISEW",
+        duration: "788 hours",
+        completionDate: "April 2025",
+        modules: [
+          { name: "Introduction to Computing", duration: "40 hrs" },
+          { name: "HTML 5, CSS3, Bootstrap 5", duration: "100 hrs" },
+          { name: "JavaScript", duration: "80 hrs" },
+          {
+            name: "Database-Driven Web Applications using PHP, MySQL",
+            duration: "148 hrs",
+          },
+          { name: "jQuery, WordPress", duration: "120 hrs" },
+          { name: "Laravel", duration: "100 hrs" },
+          { name: "React", duration: "100 hrs" },
+          { name: "VueJS", duration: "100 hrs" },
         ],
-        mobile: "01713227490",
-        email: "dev.m.helal@gmail.com",
-        whatsapp: "01713227490",
-        linkedin: "https://www.linkedin.com/in/helalmhu/",
-        github: "https://github.com/MHU-Helal",
-        portfolio: "https://dev.decodemh.com",
-        address: "338/1, East-Nakhalpara, Tejgaon, Dhaka-1215",
-        careerObjective:
-          "Passionate PHP, MySQL, Laravel, and React.js developer with a strong commitment to continuous learning and self-improvement.",
-        careerSummary: [
-          "1+ years of experience in developing web applications.",
-          "Expertise in Raw PHP, Laravel, MySQL, WordPress, ReactJS, VueJS, JavaScript, jQuery, and Ajax.",
-          "Troubleshooting, debugging, and problem-solving capabilities.",
-        ],
-        certifications: {
-          authority: "IsDB-BISEW",
-          duration: "788 hours",
-          completionDate: "April 2025",
-          modules: [
-            { name: "Introduction to Computing", duration: "40 hrs" },
-            { name: "HTML 5, CSS3, Bootstrap 5", duration: "100 hrs" },
-            { name: "JavaScript", duration: "80 hrs" },
-            {
-              name: "Database-Driven Web Applications using PHP, MySQL",
-              duration: "148 hrs",
-            },
-            { name: "jQuery, WordPress", duration: "120 hrs" },
-            { name: "Laravel", duration: "100 hrs" },
-            { name: "React", duration: "100 hrs" },
-            { name: "VueJS", duration: "100 hrs" },
-          ],
+      },
+      projects: [
+        {
+          name: "Manufacturing ERP",
+          details:
+            "Accounts Module for three different versions: Laravel, Laravel & React, and Laravel & VueJS.",
+          tools:
+            "Laravel, VueJS, React, MySQL, jQuery, JavaScript, HTML, CSS3, Bootstrap",
+          link: "http://laravel.decodemh.com/public",
+          link2: "http://dev.decodemh.com/laravel-react",
+          link3: "http://dev.decodemh.com/vuejs",
         },
-        projects: [
-          {
-            name: "Manufacturing ERP",
-            details:
-              "Accounts Module for three different versions: Laravel, Laravel & React, and Laravel & VueJS.",
-            tools:
-              "Laravel, VueJS, React, MySQL, jQuery, JavaScript, HTML, CSS3, Bootstrap",
-            link: "http://dev.decodemh.com/laravel",
-            link2: "http://dev.decodemh.com/laravel-react",
-            link3: "http://dev.decodemh.com/vuejs",
-          },
-          {
-            name: "Hospital Management",
-            details:
-              "Hospital Management System with features like Patients, Doctors, Appointments, Accounts, Billing, and Reports, available in two versions: Raw PHP, and Php & React.",
-            tools:
-              "PHP, React, MySQL, jQuery, JavaScript, HTML, CSS3, Bootstrap",
-            link: "https://reviveme.decodemh.com/",
-            link2: "http://dev.decodemh.com/react",
-          },
-          {
-            name: "WordPress Website",
-            details:
-              "Patients, Doctors, Appointments, Accounts, Billing, Reports",
-            tools:
-              "WordPress, Php, MySQL, jQuery, JavaScript, HTML, CSS3, Bootstrap",
-            link: "http://wp.decodemh.com",
-          },
-          {
-            name: "Online Resume",
-            details:
-              "Resume design for easy sharing. Easily updatable by simply updating the JavaScript Variable!",
-            tools: "JavaScript, HTML, CSS3, Bootstrap",
-            link: "https://mhu-helal.github.io/resume/",
-          },
-          {
-            name: "Local Sahri & Iftar Time App",
-            details:
-              "App to show the start end time of Sahri & Fazr Salah. Start time of Iftar. Works 365 days.",
-            tools: "JavaScript, HTML, CSS3, Bootstrap",
-            link: "https://schooling.decodemh.com/apps/siamSchedule.html",
-          },
-          {
-            name: "7 Segment Clock",
-            details: "7 Segment clock as a desktop screen",
-            tools: "JavaScript, HTML, CSS3, Bootstrap",
-            link: "http://apps.decodemh.com",
-          },
-          {
-            name: "Learning letters & numbers in Arabic, Bengali, English",
-            details:
-              "Small application to learn letters & numbers in Arabic, Bengali, English",
-            tools: "JavaScript, HTML, CSS3, Bootstrap",
-            link: "http://schooling.decodemh.com",
-          },
-          {
-            name: "Static HTML Page with Bootstrap",
-            details: "Landing page design for real-estate",
-            tools: "HTML, CSS3, Bootstrap",
-            link: "",
-          },
-          {
-            name: "CSS Animation",
-            details: "CSS Animation with SVG graphics.",
-            tools: "HTML, CSS3, SVG, Bootstrap",
-            link: "https://mhu-helal.github.io/Animation/",
-          },
-        ],
-        education: [
-          { degree: "MBA (Major in Finance)", year: "2022 - 2023" },
-          { degree: "BBA", year: "2016 - 2017" },
-          { degree: "HSC (Business Studies)", year: "2014 - 2016" },
-          { degree: "SSC (Business Studies)", year: "2012" },
-        ],
-        personalInfo: {
-          fatherName: "Abdul Hamid",
-          motherName: "Rokeya Begum",
-          dob: "16 July, 1998",
-          bloodGroup: "B Positive (B+)",
-          nationality: "Bangladeshi",
-          presentAddress: "338/1, East-Nakhalpara, Tejgaon, Dhaka-1215",
-          permanentAddress: "Sobujpara, Brahmonpara, Cumilla, Chattogram",
+        {
+          name: "Hospital Management",
+          details:
+            "Hospital Management System with features like Patients, Doctors, Appointments, Accounts, Billing, and Reports, available in two versions: Raw PHP, and Php & React.",
+          tools:
+            "PHP, React, MySQL, jQuery, JavaScript, HTML, CSS3, Bootstrap",
+          link: "https://reviveme.decodemh.com/",
+          link2: "http://dev.decodemh.com/react",
         },
-        passportPhoto: "", // If there's no photo, leave it empty or null
-        signatureImage: "", // Same for signature image
-        signatureName: "Md. Helal Uddin",
-        signatureDate: "26 March, 2025",
-      };
+        {
+          name: "WordPress Website",
+          details:
+            "Dynamic WordPress Website With Elementor",
+          tools:
+            "WordPress, Elementor",
+          link: "http://wp.decodemh.com",
+        },
+        {
+          name: "Online Resume",
+          details:
+            "Resume design for easy sharing. Easily updatable by simply updating the JavaScript Variable!",
+          tools: "JavaScript, HTML, CSS3, Bootstrap",
+          link: "https://mhu-helal.github.io/resume/",
+        },
+        {
+          name: "Local Sahri & Iftar Time App",
+          details:
+            "App to show the start end time of Sahri & Fazr Salah. Start time of Iftar. Works 365 days.",
+          tools: "JavaScript, HTML, CSS3, Bootstrap",
+          link: "https://schooling.decodemh.com/apps/siamSchedule.html",
+        },
+        {
+          name: "7 Segment Clock",
+          details: "7 Segment clock as a desktop screen",
+          tools: "JavaScript, HTML, CSS3, Bootstrap",
+          link: "http://apps.decodemh.com",
+        },
+        {
+          name: "Learning letters & numbers in Arabic, Bengali, English",
+          details:
+            "Small application to learn letters & numbers in Arabic, Bengali, English",
+          tools: "JavaScript, HTML, CSS3, Bootstrap",
+          link: "http://schooling.decodemh.com",
+        },
+        {
+          name: "Static HTML Page with CSS",
+          details: "Landing page design for real-estate",
+          tools: "HTML, CSS3",
+          link: "https://isdb-wdpf.github.io/HTML-CSS-Project/",
+        },
+        {
+          name: "CSS Animation",
+          details: "CSS Animation with SVG graphics.",
+          tools: "HTML, CSS3, SVG, Bootstrap",
+          link: "https://mhu-helal.github.io/Animation/",
+        },
+      ],
+      education: [
+        { degree: "MBA (Major in Finance)", year: "2022 - 2023" },
+        { degree: "BBA", year: "2016 - 2017" },
+        { degree: "HSC (Business Studies)", year: "2014 - 2016" },
+        { degree: "SSC (Business Studies)", year: "2012" },
+      ],
+      personalInfo: {
+        fatherName: "Abdul Hamid",
+        motherName: "Rokeya Begum",
+        dob: "16 July, 1998",
+        bloodGroup: "B Positive (B+)",
+        nationality: "Bangladeshi",
+        presentAddress: "338/1, East-Nakhalpara, Tejgaon, Dhaka-1215",
+        permanentAddress: "Sobujpara, Brahmonpara, Cumilla, Chattogram",
+      },
+      passportPhoto: "", // If there's no photo, leave it empty or null
+      signatureImage: "", // Same for signature image
+      signatureName: "Md. Helal Uddin",
+      signatureDate: "26 March, 2025",
+    };
 
-      // Function to populate the resume content dynamically
-      function updateResume() {
-        // Update Name and Position
-        document.getElementById("name").innerText = data.name;
-        document.getElementById("position").innerText = data.position;
-        let skills = "";
-        data.skills.map((item, i)=>{
-          if (i!==data.skills.length-1) {
-            skills += item + ", ";
-          }else{
-            skills += item;
-          }
-        })
-        document.getElementById("skills").innerText = `[${skills}]`;
+    // Function to populate the resume content dynamically
+    function updateResume() {
+      // Update Name and Position
+      document.getElementById("name").innerText = data.name;
+      document.getElementById("position").innerText = data.position;
+      let skills = "";
+      data.skills.map((item, i) => {
+        if (i !== data.skills.length - 1) {
+          skills += item + ", ";
+        } else {
+          skills += item;
+        }
+      })
+      document.getElementById("skills").innerText = `[${skills}]`;
 
-        // Update Contact Information
-        document.getElementById("mobile").innerText = "Mobile";
-        document
-          .getElementById("mobile")
-          .setAttribute("href", `tel:${data.mobile}`);
+      // Update Contact Information
+      document.getElementById("mobile").innerText = "Mobile";
+      document
+        .getElementById("mobile")
+        .setAttribute("href", `tel:${data.mobile}`);
 
-        document.getElementById("email").innerText = "Email";
-        document
-          .getElementById("email")
-          .setAttribute("href", `mailto:${data.email}`);
-        document.getElementById("PrintEmail").innerText = data.email;
-        document.getElementById("PrintMobile").innerText = data.mobile;
+      document.getElementById("email").innerText = "Email";
+      document
+        .getElementById("email")
+        .setAttribute("href", `mailto:${data.email}`);
+      document.getElementById("PrintEmail").innerText = data.email;
+      document.getElementById("PrintMobile").innerText = data.mobile;
 
-        document.getElementById("whatsapp").innerText = "WhatsApp";
-        document
-          .getElementById("whatsapp")
-          .setAttribute("href", `https://wa.me/${data.whatsapp}`);
+      document.getElementById("whatsapp").innerText = "WhatsApp";
+      document
+        .getElementById("whatsapp")
+        .setAttribute("href", `https://wa.me/${data.whatsapp}`);
 
-        document.getElementById("linkedin").innerText = "LinkedIn";
-        document.getElementById("linkedin").setAttribute("href", data.linkedin);
+      document.getElementById("linkedin").innerText = "LinkedIn";
+      document.getElementById("linkedin").setAttribute("href", data.linkedin);
 
-        document.getElementById("github").innerText = "GitHub";
-        document.getElementById("github").setAttribute("href", data.github);
+      document.getElementById("github").innerText = "GitHub";
+      document.getElementById("github").setAttribute("href", data.github);
 
-        document.getElementById("portfolio").innerText = "Portfolio";
-        document
-          .getElementById("portfolio")
-          .setAttribute("href", data.portfolio);
+      document.getElementById("portfolio").innerText = "Portfolio";
+      document
+        .getElementById("portfolio")
+        .setAttribute("href", data.portfolio);
 
-        // Update Career Objective
-        document.getElementById("career-objective").innerText =
-          data.careerObjective;
+      // Update Career Objective
+      document.getElementById("career-objective").innerText =
+        data.careerObjective;
 
-        // Update Career Summary
-        const summaryList = document.getElementById("career-summary");
-        data.careerSummary.forEach((item) => {
-          const listItem = document.createElement("li");
-          listItem.innerText = item;
-          summaryList.appendChild(listItem);
-        });
+      // Update Career Summary
+      const summaryList = document.getElementById("career-summary");
+      data.careerSummary.forEach((item) => {
+        const listItem = document.createElement("li");
+        listItem.innerText = item;
+        summaryList.appendChild(listItem);
+      });
 
-        // Update Certifications
-        document.getElementById("authority").innerText =
-          data.certifications.authority;
-        document.getElementById("duration").innerText =
-          data.certifications.duration;
-        document.getElementById("completion-date").innerText =
-          data.certifications.completionDate;
+      // Update Certifications
+      document.getElementById("authority").innerText =
+        data.certifications.authority;
+      document.getElementById("duration").innerText =
+        data.certifications.duration;
+      document.getElementById("completion-date").innerText =
+        data.certifications.completionDate;
 
-        const modulesTable = document.getElementById("modules-table");
+      const modulesTable = document.getElementById("modules-table");
+      const row = document.createElement("tr");
+      let moduleNames = "";
+      data.certifications.modules.forEach((module) => {
+        moduleNames += `${module.name}, `;
+      });
+      row.innerHTML = `<td>${moduleNames}</td>`;
+      modulesTable.appendChild(row);
+
+      // Update Projects
+      const projectsTable = document.getElementById("projects-table");
+      data.projects.forEach((project) => {
         const row = document.createElement("tr");
-        let moduleNames = "";
-        data.certifications.modules.forEach((module) => {
-          moduleNames += `${module.name}, `;
-        });
-        row.innerHTML = `<td>${moduleNames}</td>`;
-        modulesTable.appendChild(row);
-
-        // Update Projects
-        const projectsTable = document.getElementById("projects-table");
-        data.projects.forEach((project) => {
-          const row = document.createElement("tr");
-          row.innerHTML = `
+        row.innerHTML = `
                             <td>${project.name}</td>
                             <td>${project.details}</td>
                             <td>${project.tools}</td>
                             <td><a href="${project.link}" target="_blank">Preview</a></td>
                         `;
-          projectsTable.appendChild(row);
-        });
+        projectsTable.appendChild(row);
+      });
 
-        // Update Education
-        const educationTable = document.getElementById("education-table");
-        data.education.forEach((edu) => {
-          const row = document.createElement("tr");
-          row.innerHTML = `<td>${edu.degree}</td><td>${edu.year}</td>`;
-          educationTable.appendChild(row);
-        });
+      // Update Education
+      const educationTable = document.getElementById("education-table");
+      data.education.forEach((edu) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `<td>${edu.degree}</td><td>${edu.year}</td>`;
+        educationTable.appendChild(row);
+      });
 
-        // Update Personal Information
-        document.getElementById("father-name").innerText =
-          data.personalInfo.fatherName;
-        document.getElementById("mother-name").innerText =
-          data.personalInfo.motherName;
-        document.getElementById("dob").innerText = data.personalInfo.dob;
-        document.getElementById("blood-group").innerText =
-          data.personalInfo.bloodGroup;
-        document.getElementById("nationality").innerText =
-          data.personalInfo.nationality;
-        document.getElementById("present-address").innerText =
-          data.personalInfo.presentAddress;
-        document.getElementById("permanent-address").innerText =
-          data.personalInfo.permanentAddress;
+      // Update Personal Information
+      document.getElementById("father-name").innerText =
+        data.personalInfo.fatherName;
+      document.getElementById("mother-name").innerText =
+        data.personalInfo.motherName;
+      document.getElementById("dob").innerText = data.personalInfo.dob;
+      document.getElementById("blood-group").innerText =
+        data.personalInfo.bloodGroup;
+      document.getElementById("nationality").innerText =
+        data.personalInfo.nationality;
+      document.getElementById("present-address").innerText =
+        data.personalInfo.presentAddress;
+      document.getElementById("permanent-address").innerText =
+        data.personalInfo.permanentAddress;
 
-        // Handle Passport Photo
-        if (data.passportPhoto) {
-          document.getElementById("passport-photo").src = data.passportPhoto;
-          document.getElementById("photo-container").classList.remove("d-none");
-        }
-
-        // Handle Signature Section
-        if (!data.signatureImage) {
-          // document.getElementById("signature-image").src = data.signatureImage;
-          document.getElementById("signature-name").innerText =
-            data.signatureName;
-          document.getElementById("signature-date").innerText =
-            data.signatureDate;
-          document
-            .getElementById("signature-section")
-            .classList.remove("d-none");
-          // document.getElementById("signature-section").removeChild('img');
-        }
+      // Handle Passport Photo
+      if (data.passportPhoto) {
+        document.getElementById("passport-photo").src = data.passportPhoto;
+        document.getElementById("photo-container").classList.remove("d-none");
       }
 
-      // Initialize the resume with the data
-      updateResume();
-
-      function prepareForPrint() {
-        // Get the container and card elements
-        const container = document.getElementById("resumeBody");
-        const card = document.getElementById("resumeContents");
-        // const contacts = document.getElementsByClassName("printContactDetails");
-
-        // Remove classes that apply layout styling (like width and padding)
-        container.classList.remove("py-5", "container");
-        card.classList.remove("shadow-lg", "border-0", "rounded");
-        // contacts.classList.remove("d-none");
+      // Handle Signature Section
+      if (!data.signatureImage) {
+        // document.getElementById("signature-image").src = data.signatureImage;
+        document.getElementById("signature-name").innerText =
+          data.signatureName;
+        document.getElementById("signature-date").innerText =
+          data.signatureDate;
+        document
+          .getElementById("signature-section")
+          .classList.remove("d-none");
+        // document.getElementById("signature-section").removeChild('img');
       }
+    }
 
-      // Add an event listener to trigger the function before printing
-      window.onbeforeprint = prepareForPrint();
-    </script>
-  </body>
+    // Initialize the resume with the data
+    updateResume();
+
+    function prepareForPrint() {
+      // Get the container and card elements
+      const container = document.getElementById("resumeBody");
+      const card = document.getElementById("resumeContents");
+      // const contacts = document.getElementsByClassName("printContactDetails");
+
+      // Remove classes that apply layout styling (like width and padding)
+      container.classList.remove("py-5", "container");
+      card.classList.remove("shadow-lg", "border-0", "rounded");
+      // contacts.classList.remove("d-none");
+    }
+
+    // Add an event listener to trigger the function before printing
+    window.onbeforeprint = prepareForPrint();
+  </script>
+</body>
+
 </html>
