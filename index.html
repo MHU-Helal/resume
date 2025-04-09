@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/Favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/Favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,10 +21,12 @@
         margin: 0;
         padding: 0;
       }
+
       ::selection {
         color: burlywood;
         background-color: #2c2c2c23;
       }
+
       body {
         width: 100%;
         /* background: black;
@@ -58,7 +60,6 @@
         /* position: relative; */
       }
 
-
       section > div {
         margin-bottom: 5px;
       }
@@ -71,9 +72,11 @@
         list-style-type: circle;
         margin-left: 25px;
       }
+
       li::marker {
         color: #007bff;
       }
+
       .section-header {
         background-color: #007bff;
         color: white;
@@ -81,22 +84,27 @@
         margin-top: 20px;
         border-radius: 5px;
       }
+
       table {
         width: 100%;
       }
+
       table td,
       table th {
         padding: 8px;
         text-align: left;
         vertical-align: middle;
       }
+
       .table th {
         background-color: #f1f1f1;
       }
+
       .table-bordered td,
       .table-bordered th {
         border: 1px solid #ddd;
       }
+
       .photo-section {
         width: 140px;
         height: 140px;
@@ -105,11 +113,13 @@
         margin-top: 30px;
         margin-right: 15px;
       }
+
       .photo-section img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
+
       .signature-section {
         text-align: center;
         margin-top: 50px;
@@ -135,6 +145,7 @@
         /* filter:blur(1px) */
         /* mix-blend-mode:overlay; */
       }
+
       .content-section {
         margin-top: 20px;
       }
@@ -144,10 +155,11 @@
       }
 
       .shortSection {
-          page-break-before: auto !important;
-          page-break-after: auto !important;
-          break-inside: avoid !important; /* Prevent content from breaking within a section */
-        }
+        page-break-before: auto !important;
+        page-break-after: auto !important;
+        break-inside: avoid !important;
+        /* Prevent content from breaking within a section */
+      }
 
       /* Print styles */
       /* @media print {
@@ -232,6 +244,7 @@
       } */
     </style>
   </head>
+
   <body>
     <div class="container py-5" id="resumeBody">
       <div class="row">
@@ -250,7 +263,11 @@
               <!-- Personal Info and Resume Content -->
               <div class="text-center mb-4 content-section">
                 <h1 class="display-4" id="name"></h1>
-                <p class="lead m-0 text-muted position"><strong class="htmlSign">&lt;<span id="position"></span>/&gt;</strong></p>
+                <p class="lead m-0 text-muted position">
+                  <strong class="htmlSign"
+                    >&lt;<span id="position"></span>/&gt;</strong
+                  >
+                </p>
                 <p class="lead fw-bold skills"><span id="skills"></span></p>
                 <p class="text-center contactDetails">
                   <a id="mobile"></a> | <a id="email"></a> |
@@ -324,35 +341,46 @@
                 <div class="section-header">
                   <strong>Professional Experience</strong>
                 </div>
-                <table class="table table-bordered">
-                  <tr>
-                    <td colspan="2">
-                      <strong>Web Application Development with PHP and Frameworks (WDPF)</strong
-                      >
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><strong>Authority:</strong></td>
-                    <td id="authority"></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Duration:</strong></td>
-                    <td id="duration"></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Completed:</strong></td>
-                    <td id="completion-date"></td>
-                  </tr>
-                </table>
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Modules</th>
-                      <!-- <th>Duration (Hours)</th> -->
-                    </tr>
-                  </thead>
-                  <tbody id="modules-table"></tbody>
-                </table>
+                <div class="px-3 m-0">
+                  <p class="m-0 fw-bold" id="PE-Position">
+                    Junior Web Developer
+                    <span class="float-end text-primary PE-Duration"
+                      >Jun 2024 - Present</span
+                    >
+                  </p>
+                  <p class="m-0 fw-regular" id="PE-Organization">
+                    <a href="http://www.intelsofts.com" target="_blank">Intellect Software Ltd.</a>
+                  </p>
+
+                  <!-- <hr class="text-primary"> -->
+                  <p class="mt-3 mb-0 fw-bold text-primary">
+                    Responsibilities:
+                  </p>
+                  <ul>
+                    <li>Coordinated project design and development tasks.</li>
+                    <li>
+                      Developed and maintained web applications using PHP,
+                      Laravel, MySQL, and JavaScript.
+                    </li>
+                    <li>
+                      Responsible for debugging and troubleshooting web
+                      applications.
+                    </li>
+                  </ul>
+                </div>
+                <hr class="text-primary" />
+                <div class="px-3 m-0">
+                  <p class="m-0 fw-bold" id="PE-Position">
+                    Remote Web Developer<span
+                      class="float-end text-primary PE-Duration"
+                    >
+                      2023 - Jun 2024</span
+                    >
+                  </p>
+                  <p class="m-0 fw-regular" id="PE-Organization">
+                    Online Marketplaces
+                  </p>
+                </div>
               </section>
 
               <!-- Software Projects -->
@@ -466,7 +494,7 @@
                     <td>
                       <strong>Md. Tawhid Imdad</strong>
                       <p>
-                        CTO, Intellect Software Ltd. <br />
+                        CTO, <a href="http://www.intelsofts.com/" target="_blank">Intellect Software Ltd.</a> <br />
                         Phone: <a href="callto:01985426948">01985426948</a
                         ><br />
                         Email:
@@ -520,6 +548,13 @@
     </div>
 
     <script>
+      const date = new Date();
+
+      const formattedDate = date.toLocaleDateString("en-GB", {
+        day: "2-digit",
+        month: "long",
+        year: "numeric",
+      });
       // Example Variables to Update the Resume
       const data = {
         name: "Md. Helal Uddin",
@@ -544,7 +579,7 @@
         careerObjective:
           "Passionate PHP, MySQL, Laravel, and React.js developer with a strong commitment to continuous learning and self-improvement.",
         careerSummary: [
-          "1+ years of experience in developing web applications.",
+          "2+ years of experience in developing web applications.",
           "Expertise in Raw PHP, Laravel, MySQL, WordPress, ReactJS, VueJS, JavaScript, jQuery, and Ajax.",
           "Troubleshooting, debugging, and problem-solving capabilities.",
         ],
@@ -573,7 +608,7 @@
               "Accounts Module for three different versions: Laravel, Laravel & React, and Laravel & VueJS.",
             tools:
               "Laravel, VueJS, React, MySQL, jQuery, JavaScript, HTML, CSS3, Bootstrap",
-            link: "http://dev.decodemh.com/laravel",
+            link: "http://laravel.decodemh.com/public",
             link2: "http://dev.decodemh.com/laravel-react",
             link3: "http://dev.decodemh.com/vuejs",
           },
@@ -588,10 +623,8 @@
           },
           {
             name: "WordPress Website",
-            details:
-              "Patients, Doctors, Appointments, Accounts, Billing, Reports",
-            tools:
-              "WordPress, Php, MySQL, jQuery, JavaScript, HTML, CSS3, Bootstrap",
+            details: "Dynamic WordPress Website With Elementor",
+            tools: "WordPress, Elementor",
             link: "http://wp.decodemh.com",
           },
           {
@@ -622,10 +655,10 @@
             link: "http://schooling.decodemh.com",
           },
           {
-            name: "Static HTML Page with Bootstrap",
+            name: "Static HTML Page with CSS",
             details: "Landing page design for real-estate",
-            tools: "HTML, CSS3, Bootstrap",
-            link: "",
+            tools: "HTML, CSS3",
+            link: "https://isdb-wdpf.github.io/HTML-CSS-Project/",
           },
           {
             name: "CSS Animation",
@@ -652,7 +685,7 @@
         passportPhoto: "", // If there's no photo, leave it empty or null
         signatureImage: "", // Same for signature image
         signatureName: "Md. Helal Uddin",
-        signatureDate: "26 March, 2025",
+        signatureDate: formattedDate,
       };
 
       // Function to populate the resume content dynamically
@@ -661,13 +694,13 @@
         document.getElementById("name").innerText = data.name;
         document.getElementById("position").innerText = data.position;
         let skills = "";
-        data.skills.map((item, i)=>{
-          if (i!==data.skills.length-1) {
+        data.skills.map((item, i) => {
+          if (i !== data.skills.length - 1) {
             skills += item + ", ";
-          }else{
+          } else {
             skills += item;
           }
-        })
+        });
         document.getElementById("skills").innerText = `[${skills}]`;
 
         // Update Contact Information
