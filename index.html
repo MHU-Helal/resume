@@ -352,8 +352,8 @@
                   <a id="mobile"></a> | <a id="email"></a> |
                   <a id="whatsapp"></a> |
                   <a target="_blank" id="linkedin"></a> |
-                  <a target="_blank" id="github"></a> |
-                  <a target="_blank" id="portfolio"></a>
+                  <a target="_blank" id="github"></a>
+                   <!-- |<a target="_blank" id="portfolio"></a> -->
                 </p>
                 <p class="text-center printContactDetails">
                   <span id="PrintMobile"></span> | <span id="PrintEmail"></span>
@@ -439,7 +439,7 @@
                     <li>Coordinated project design and development tasks.</li>
                     <li>
                       Developed and maintained web applications using PHP,
-                      Laravel, MySQL, and JavaScript.
+                      Laravel, VueJS, MySQL, and JavaScript.
                     </li>
                     <li>
                       Responsible for debugging and troubleshooting web
@@ -500,7 +500,7 @@
                   <strong
                     ><a
                       class="text-white"
-                      href="https://drive.google.com/drive/folders/12jPCc6LLx6qbKW0QCa2vrDKxC4q1szq-?usp=sharing"
+                      href="https://drive.google.com/drive/folders/1Q8B7Fgp79p2XSwZ4S_cjLbyiXgCKTBG1?usp=sharing" id="academic-certificates"
                       >Academic & Other Certificates</a
                     ></strong
                   >
@@ -644,12 +644,11 @@
       position: "Full Stack Web Developer",
       skills: [
         "Php",
-        "MySQL",
         "Laravel",
+        "MySQL",
+        "VueJS",
         "JavaScript",
         "jQuery",
-        "Vue",
-        "React",
         "GitHub",
       ],
       mobile: "01713227490",
@@ -658,12 +657,13 @@
       linkedin: "https://www.linkedin.com/in/helalmhu/",
       github: "https://github.com/MHU-Helal",
       portfolio: "https://dev.decodemh.com",
+      academicCertificates:"https://drive.google.com/drive/folders/1Q8B7Fgp79p2XSwZ4S_cjLbyiXgCKTBG1?usp=sharing",
       address: "338/1, East-Nakhalpara, Tejgaon, Dhaka-1215",
       careerObjective:
-        "Passionate PHP, MySQL, Laravel, and React.js developer with a strong commitment to continuous learning and self-improvement.",
+        "To obtain a challenging position as a Laravel Developer at Softwind Tech Ltd., where I can utilize my technical skills and passion for web development to contribute to innovative projects, grow professionally, and be a valuable part of a forward-thinking team.",
       careerSummary: [
         "2+ years of experience in developing web applications.",
-        "Expertise in Raw PHP, Laravel, MySQL, WordPress, ReactJS, VueJS, JavaScript, jQuery, and Ajax.",
+        "Expertise in Raw PHP, Laravel, MySQL, VueJS, JavaScript, jQuery, and Ajax.",
         "Troubleshooting, debugging, and problem-solving capabilities.",
       ],
       certifications: {
@@ -688,21 +688,21 @@
         {
           name: "Manufacturing ERP",
           details:
-            "Accounts Module for three different versions: Laravel, Laravel & React, and Laravel & VueJS.",
+            "Accounts Module in different versions: Laravel, Laravel & VueJs",
           tools:
-            "Laravel, VueJS, React, MySQL, jQuery, JavaScript, HTML, CSS3, Bootstrap",
+            "Laravel, VueJS, MySQL, jQuery, JavaScript, HTML, CSS3, Bootstrap",
           link: "http://laravel.decodemh.com",
-          link2: "http://dev.decodemh.com/laravel-react",
-          link3: "http://dev.decodemh.com/vuejs",
+          link2: "http://laravel.decodemh.com/VueJS",
+          link3: "http://laravel.decodemh.com/ReactJS",
         },
         {
           name: "Hospital Management",
           details:
-            "Hospital Management System with features like Patients, Doctors, Appointments, Accounts, Billing, and Reports, available in two versions: Raw PHP, and Php & React.",
+            "Hospital System with features like Patients, Doctors, Appointments, and Reports, available in two versions: Raw PHP, and Php & React.",
           tools:
             "PHP, React, MySQL, jQuery, JavaScript, HTML, CSS3, Bootstrap",
-          link: "https://reviveme.decodemh.com/",
-          link2: "http://dev.decodemh.com/react",
+          link: "https://reviveme.decodemh.com",
+          link2: "https://reviveme.decodemh.com/ReactJS",
         },
         {
           name: "WordPress Website",
@@ -711,13 +711,6 @@
           tools:
             "WordPress, Elementor",
           link: "http://wp.decodemh.com",
-        },
-        {
-          name: "Online Resume",
-          details:
-            "Resume design for easy sharing. Easily updatable by simply updating the JavaScript Variable!",
-          tools: "JavaScript, HTML, CSS3, Bootstrap",
-          link: "https://mhu-helal.github.io/resume/",
         },
         {
           name: "Local Sahri & Iftar Time App",
@@ -753,8 +746,9 @@
         },
       ],
       education: [
+        { degree: "Degree (Web Application Development)", year: "2024-2025" },
         { degree: "MBA (Major in Finance)", year: "2022 - 2023" },
-        { degree: "BBA", year: "2016 - 2017" },
+        { degree: "BBA (Major in Finance)", year: "2016 - 2017" },
         { degree: "HSC (Business Studies)", year: "2014 - 2016" },
         { degree: "SSC (Business Studies)", year: "2012" },
       ],
@@ -812,10 +806,10 @@
       document.getElementById("github").innerText = "GitHub";
       document.getElementById("github").setAttribute("href", data.github);
 
-      document.getElementById("portfolio").innerText = "Portfolio";
-      document
-        .getElementById("portfolio")
-        .setAttribute("href", data.portfolio);
+      // document.getElementById("portfolio").innerText = "Portfolio";
+      // document
+      //   .getElementById("portfolio")
+      //   .setAttribute("href", data.portfolio);
 
       // Update Career Objective
       document.getElementById("career-objective").innerText =
@@ -836,6 +830,8 @@
         data.certifications.duration;
       document.getElementById("completion-date").innerText =
         data.certifications.completionDate;
+      document.getElementById("academic-certificates").href=
+        data.academicCertificates;
 
       const modulesTable = document.getElementById("modules-table");
       const row = document.createElement("tr");
