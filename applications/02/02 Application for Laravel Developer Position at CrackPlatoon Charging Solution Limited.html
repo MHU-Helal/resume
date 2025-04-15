@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Delius&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Gamja+Flower&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Splash&family=Water+Brush&display=swap"
+        rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laravel Developer Position - Softwind Tech Ltd</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Comic Sans MS" !important;
+            /* font-size: 32px; */
+            text-align: justify !important;
+            /* background: black; */
+            /* color: white; */
+            width: 100%;
+            height: 100%;
+            padding-inline: 100px;
+            /* position: relative; */
+        }
+
+        h6 {
+            /* padding-top: 20px !important; */
+            font-size: 16px !important;
+            text-align: center;
+        }
+
+        #coverLetterContents {
+            /* max-width: 600px; */
+            padding: 20px !important;
+            /* margin: 0px auto; */
+        }
+
+        .contacts {
+            /* max-width: 600px !important; */
+            padding: 20px !important;
+            margin-inline: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section id="cover-letter" style="margin: 0px; padding: 20px; width: 100%;">
+        <div>
+            <div class="d-none">
+                <!-- Email Subject -->
+                <p>Application for Laravel Developer Position at CrackPlatoon Charging Solution Limited</p>
+
+                <!-- Send Resume To! -->
+                <p>career@cpcsl.com</p>
+            </div>
+
+            <!-- Greetings -->
+            <h6 class="text-primary">Dear Hiring Team</h6>
+
+            <!-- Cover Letter Contents -->
+            <p class="text-center" id="coverLetterContents">
+                I am writing to express my interest in the Laravel Developer position at CrackPlatoon Charging Solution
+                Limited. With over four years of experience in Laravel, PHP, Vue.js, and Livewire, I have developed and
+                maintained web applications that are robust, scalable, and efficient.
+                <br><br>
+                I am particularly excited about the opportunity to contribute to an innovative company driving
+                sustainable electric mobility in Bangladesh. My background in developing B2B software, implementing
+                RESTful APIs, and adhering to clean coding principles aligns well with your requirements. Additionally,
+                my basic knowledge of DevOps and E2E testing would allow me to support the team in delivering
+                high-quality, production-ready solutions.
+                <br><br>
+                I have attached my resume for your review. Thank you for considering my application. I look forward to
+                the opportunity to discuss how I can contribute to your team.
+            </p>
+
+            <!-- Contact Details -->
+            <p class="contacts">
+                <span class="fw-lighter" id="date">10 April, 2025</span><br>
+                Best regards, <br>
+                <span class="name" style="font-family: 'Comic Sans MS';">Md. Helal Uddin</span>, <br>
+                Full-Stack Web-Developer.<br>
+                <a href="callto:01713227490" title="For call & WhatsApp">01713227490</a> |
+                <a href="mailto:dev.m.helal@gmail.com" title="For email">@Helal</a>
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const date = new Date();
+
+        const options = {
+            day: '2-digit',
+            month: 'long',
+            year: 'numeric'
+        };
+
+        const formattedDate = date.toLocaleDateString('en-GB', options);
+
+        $(document).ready(function () {
+            $('#date').text(formattedDate)
+        });
+    </script>
+</body>
+
+</html>
