@@ -38,7 +38,7 @@
       display: block;
     }
 
-    .printContactDetails {
+    .printContactDetails, .forPrinting {
       display: none;
     }
 
@@ -84,26 +84,6 @@
       padding: 8px 16px;
       margin-top: 20px;
       border-radius: 5px;
-    }
-
-    table {
-      width: 100%;
-    }
-
-    table td,
-    table th {
-      padding: 8px;
-      text-align: left;
-      vertical-align: middle;
-    }
-
-    .table th {
-      background-color: #f1f1f1;
-    }
-
-    .table-bordered td,
-    .table-bordered th {
-      border: 1px solid #ddd;
     }
 
     .photo-section {
@@ -168,13 +148,6 @@
       vertical-align: middle;
     }
 
-    .shortSection {
-      page-break-before: auto !important;
-      page-break-after: auto !important;
-      break-inside: avoid !important;
-      /* Prevent content from breaking within a section */
-    }
-
     .table th {
       background-color: #f1f1f1;
     }
@@ -182,6 +155,13 @@
     .table-bordered td,
     .table-bordered th {
       border: 1px solid #ddd;
+    }
+
+    .shortSection {
+      page-break-before: auto !important;
+      page-break-after: auto !important;
+      break-inside: avoid !important;
+      /* Prevent content from breaking within a section */
     }
 
     .photo-section {
@@ -242,9 +222,13 @@
 
     /* Print styles */
     @media print {
-      /* .spacer {
-        height: 0;
-      } */
+      .forPrinting{
+        display: block;
+        width: 100%;
+      }
+      .forPrinting td{
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -421,34 +405,44 @@
                 <strong>Personal Information</strong>
               </div>
               <table class="table table-bordered">
-                <tr>
-                  <td><strong>Father's Name:</strong></td>
-                  <td id="father-name"></td>
-                </tr>
-                <tr>
-                  <td><strong>Mother's Name:</strong></td>
-                  <td id="mother-name"></td>
-                </tr>
-                <tr>
-                  <td><strong>Date of Birth:</strong></td>
-                  <td id="dob"></td>
-                </tr>
-                <tr>
-                  <td><strong>Blood Group:</strong></td>
-                  <td id="blood-group"></td>
-                </tr>
-                <tr>
-                  <td><strong>Nationality:</strong></td>
-                  <td id="nationality"></td>
-                </tr>
-                <tr>
-                  <td><strong>Present Address:</strong></td>
-                  <td id="present-address"></td>
-                </tr>
-                <tr>
-                  <td><strong>Permanent Address:</strong></td>
-                  <td id="permanent-address"></td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td><strong>Father's Name:</strong></td>
+                    <td id="father-name"></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Mother's Name:</strong></td>
+                    <td id="mother-name"></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Date of Birth:</strong></td>
+                    <td id="dob"></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Blood Group:</strong></td>
+                    <td id="blood-group"></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Nationality:</strong></td>
+                    <td id="nationality"></td>
+                  </tr>
+                  <tr class="forPrinting">
+                    <td><strong>Phone</strong></td>
+                    <td id="phone"></td>
+                  </tr>
+                  <tr class="forPrinting">
+                    <td><strong>Email:</strong></td>
+                    <td id="gmail"></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Present Address:</strong></td>
+                    <td id="present-address"></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Permanent Address:</strong></td>
+                    <td id="permanent-address"></td>
+                  </tr>
+                </tbody>
               </table>
             </section>
 
@@ -546,9 +540,11 @@
       skills: [
         "Php",
         "Laravel",
-        "WordPress",
+        "Ajax",
+        "OOP",
         "MySQL",
         "REST API",
+        "VueJS",
         "JavaScript",
         "GitHub",
       ],
@@ -563,8 +559,8 @@
       careerObjective:
         "To obtain the position of Support Engineer at weDevs, where I can utilize my strong foundation in PHP, WordPress, and customer support to help users resolve technical issues, improve product experience, and contribute to building world-class WordPress solutions. I seek a collaborative, remote-friendly environment where I can grow my skills and make a meaningful impact.",
       careerSummary: [
-        "2+ years of experience in developing web applications.",
-        "Expertise in Raw PHP, Laravel, WordPress, MySQL, REST APIs, JavaScript, jQuery, and Ajax.",
+        "1+ years of experience in developing web applications.",
+        "Expertise in Raw PHP, Laravel, VueJS, MySQL, REST APIs, JavaScript, jQuery, and Ajax.",
         "Troubleshooting, debugging, and problem-solving capabilities.",
         "Proficient in PHP, JavaScript, CSS, MySQL, and using browser dev tools for debugging. Experienced in live chat and ticket-based customer support with a strong focus on clear communication, documentation, and a user-first mindset. Passionate about contributing to knowledge bases and improving product reliability and performance."
       ],
@@ -660,6 +656,8 @@
         dob: "16 July, 1998",
         bloodGroup: "B Positive (B+)",
         nationality: "Bangladeshi",
+        phone: "01713227490",
+        email: "dev.m.helal@gmail.com",
         presentAddress: "338/1, East-Nakhalpara, Tejgaon, Dhaka-1215",
         permanentAddress: "Sobujpara, Brahmonpara, Cumilla, Chattogram",
       },
@@ -766,19 +764,15 @@
       });
 
       // Update Personal Information
-      document.getElementById("father-name").innerText =
-        data.personalInfo.fatherName;
-      document.getElementById("mother-name").innerText =
-        data.personalInfo.motherName;
+      document.getElementById("father-name").innerText = data.personalInfo.fatherName;
+      document.getElementById("mother-name").innerText = data.personalInfo.motherName;
       document.getElementById("dob").innerText = data.personalInfo.dob;
-      document.getElementById("blood-group").innerText =
-        data.personalInfo.bloodGroup;
-      document.getElementById("nationality").innerText =
-        data.personalInfo.nationality;
-      document.getElementById("present-address").innerText =
-        data.personalInfo.presentAddress;
-      document.getElementById("permanent-address").innerText =
-        data.personalInfo.permanentAddress;
+      document.getElementById("blood-group").innerText = data.personalInfo.bloodGroup;
+      document.getElementById("nationality").innerText = data.personalInfo.nationality;
+      document.getElementById("phone").innerText = data.personalInfo.phone;
+      document.getElementById("gmail").innerText = data.personalInfo.email;
+      document.getElementById("present-address").innerText = data.personalInfo.presentAddress;
+      document.getElementById("permanent-address").innerText = data.personalInfo.permanentAddress;
 
       // Handle Passport Photo
       if (data.passportPhoto) {
