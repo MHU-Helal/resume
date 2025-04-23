@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/Favicon.png" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Delius&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Gamja+Flower&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Splash&family=Water+Brush&display=swap"
-      rel="stylesheet"
-    />
-    <title>Md. Helal Uddin - Full Stack Web Developer</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
 
-      ::selection {
-        color: burlywood;
-        background-color: #2c2c2c23;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/Favicon.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Delius&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Gamja+Flower&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Splash&family=Water+Brush&display=swap"
+    rel="stylesheet" />
+  <title>Md. Helal Uddin - Full Stack Web Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-      body {
-        width: 100%;
-        /* background: black;
+    ::selection {
+      color: burlywood;
+      background-color: #2c2c2c23;
+    }
+
+    body {
+      width: 100%;
+      /* background: black;
         background: url(BG.jpg) no-repeat center center fixed;*/
-      }
+    }
 
     /* #resumeBody{
         background: url(BG.jpg) no-repeat center center fixed;
@@ -41,7 +38,7 @@
       display: block;
     }
 
-    .printContactDetails {
+    .printContactDetails, .forPrinting {
       display: none;
     }
 
@@ -60,9 +57,9 @@
       /* position: relative; */
     }
 
-      section > div {
-        margin-bottom: 5px;
-      }
+    section>div {
+      margin-bottom: 5px;
+    }
 
     section>div {
       margin-bottom: 5px;
@@ -72,63 +69,6 @@
       font-size: 16px;
     }
 
-      li {
-        list-style-type: circle;
-        margin-left: 25px;
-      }
-
-      li::marker {
-        color: #007bff;
-      }
-
-      .section-header {
-        background-color: #007bff;
-        color: white;
-        padding: 8px 16px;
-        margin-top: 20px;
-        border-radius: 5px;
-      }
-
-      table {
-        width: 100%;
-      }
-
-      table td,
-      table th {
-        padding: 8px;
-        text-align: left;
-        vertical-align: middle;
-      }
-
-      .table th {
-        background-color: #f1f1f1;
-      }
-
-      .table-bordered td,
-      .table-bordered th {
-        border: 1px solid #ddd;
-      }
-
-      .photo-section {
-        width: 140px;
-        height: 140px;
-        border-radius: 15%;
-        overflow: hidden;
-        margin-top: 30px;
-        margin-right: 15px;
-      }
-
-      .photo-section img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .signature-section {
-        text-align: center;
-        margin-top: 50px;
-        position: relative;
-      }
     li {
       list-style-type: circle;
       margin-left: 25px;
@@ -146,18 +86,57 @@
       border-radius: 5px;
     }
 
-      .signature-section img {
-        width: 100px;
-        height: 40px;
-        object-fit: contain;
-        /* background: url(BG.jpg) no-repeat center center fixed; */
-        /* filter:blur(1px) */
-        /* mix-blend-mode:overlay; */
-      }
+    .photo-section {
+      width: 140px;
+      height: 140px;
+      border-radius: 15%;
+      overflow: hidden;
+      margin-top: 30px;
+      margin-right: 15px;
+    }
 
-      .content-section {
-        margin-top: 20px;
-      }
+    .photo-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .signature-section {
+      text-align: center;
+      margin-top: 50px;
+      /* position: relative; */
+    }
+
+    li {
+      list-style-type: circle;
+      margin-left: 25px;
+    }
+
+    li::marker {
+      color: #007bff;
+    }
+
+    .section-header {
+      background-color: #007bff;
+      color: white;
+      padding: 8px 16px;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+    .signature-section img {
+      width: 100px;
+      height: 40px;
+      object-fit: contain;
+      /* background: url(BG.jpg) no-repeat center center fixed; */
+      /* filter:blur(1px) */
+      /* mix-blend-mode:overlay; */
+    }
+
+    .content-section {
+      margin-top: 20px;
+    }
+
     table {
       width: 100%;
     }
@@ -169,12 +148,6 @@
       vertical-align: middle;
     }
 
-      .shortSection {
-        page-break-before: auto !important;
-        page-break-after: auto !important;
-        break-inside: avoid !important;
-        /* Prevent content from breaking within a section */
-      }
     .table th {
       background-color: #f1f1f1;
     }
@@ -182,6 +155,13 @@
     .table-bordered td,
     .table-bordered th {
       border: 1px solid #ddd;
+    }
+
+    .shortSection {
+      page-break-before: auto !important;
+      page-break-after: auto !important;
+      break-inside: avoid !important;
+      /* Prevent content from breaking within a section */
     }
 
     .photo-section {
@@ -241,278 +221,191 @@
     }
 
     /* Print styles */
-    /* @media print {
-        body {
-          width: 100%;
-          margin: 0;
-          padding: 0;
-        }
-        #resumeContents {
-          box-shadow: none !important;
-          border: none !important;
-          border-radius: 0 !important;
-          width: 100% !important;
-          margin: 0 !important;
-        }
-        .contactDetails {
-          display: none;
-        }
+    @media print {
+      .forPrinting{
+        display: block;
+        width: 100%;
+      }
+      .forPrinting td{
+        width: 100%;
+      }
+    }
+  </style>
+</head>
 
-        .printContactDetails {
-          display: block;
-        }
+<body>
+  <div class="container py-5" id="resumeBody">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="card shadow-lg border-0 rounded" id="resumeContents">
+          <div class="card-body">
+            <!-- Passport Photo -->
+            <div id="photo-container" class="photo-section float-end d-none">
+              <img id="passport-photo" src="" alt="Full stack web developer" />
+            </div>
 
-        .printSections {
-          display: none;
-        }
-        /* Ensure sections break properly 
-        .shortSection {
-          page-break-before: auto !important;
-          page-break-after: auto !important;
-          break-inside: avoid !important; /* Prevent content from breaking within a section
-        }
-        #resumeBody {
-          box-shadow: none !important;
-          border: none !important;
-          border-radius: 0 !important;
-          width: 100% !important;
-          margin: 0 !important;
-          padding: 0 !important;
-        }
-        .container {
-          width: 100% !important; /* Make container full width when printing
-          padding: 0 !important;
-        }
-        .row {
-          width: 100%;
-          margin: 0;
-        }
-        .col-lg-8 {
-          width: 100% !important; /* Make the content take up the full width 
-          margin: 0;
-        }
-        .card {
-          width: 100% !important; /* Full-width card for printing 
-          margin: 0;
-        }
-        .card-body {
-          width: 100% !important;
-        }
-        .photo-section {
-          margin: 0; /* Remove margin for the photo section 
-        }
-        .content-section {
-          padding: 0 20px;
-        }
-        .signature-section img {
-          width: 200px; /* Adjust signature image for printing 
-        }
-        .section-header {
-          font-size: 18px; /* Increase font size for print 
-        }
-        table {
-          width: 100%;
-        }
-        table td,
-        table th {
-          font-size: 14px;
-        }
-        table th {
-          background-color: #f1f1f1;
-        }
-      } */
-    </style>
-  </head>
+            <!-- Personal Info and Resume Content -->
+            <div class="text-center mb-4 content-section">
+              <h1 class="display-4" id="name"></h1>
+              <p class="lead m-0 text-muted position">
+                <strong class="htmlSign">&lt;<span id="position"></span>/&gt;</strong>
+              </p>
+              <p class="lead fw-bold skills"><span id="skills"></span></p>
+              <p class="text-center contactDetails">
+                <a id="mobile"></a> | <a id="email"></a> |
+                <a id="whatsapp"></a> |
+                <a target="_blank" id="linkedin"></a> |
+                <a target="_blank" id="github"></a>
+                <!-- |<a target="_blank" id="portfolio"></a> -->
+              </p>
+              <p class="text-center printContactDetails">
+                <span id="PrintMobile"></span> | <span id="PrintEmail"></span>
+              </p>
+              <p id="address"></p>
+            </div>
 
-  <body>
-    <div class="container py-5" id="resumeBody">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <div class="card shadow-lg border-0 rounded" id="resumeContents">
-            <div class="card-body">
-              <!-- Passport Photo -->
-              <div id="photo-container" class="photo-section float-end d-none">
-                <img
-                  id="passport-photo"
-                  src=""
-                  alt="Full stack web developer"
-                />
+            <!-- Career Objective -->
+            <section class="shortSection">
+              <div class="section-header">
+                <strong>Career Objective</strong>
               </div>
+              <p class="text-muted" id="career-objective"></p>
+            </section>
 
-              <!-- Personal Info and Resume Content -->
-              <div class="text-center mb-4 content-section">
-                <h1 class="display-4" id="name"></h1>
-                <p class="lead m-0 text-muted position">
-                  <strong class="htmlSign"
-                    >&lt;<span id="position"></span>/&gt;</strong
-                  >
-                </p>
-                <p class="lead fw-bold skills"><span id="skills"></span></p>
-                <p class="text-center contactDetails">
-                  <a id="mobile"></a> | <a id="email"></a> |
-                  <a id="whatsapp"></a> |
-                  <a target="_blank" id="linkedin"></a> |
-                  <a target="_blank" id="github"></a> |
-                  <a target="_blank" id="portfolio"></a>
-                </p>
-                <p class="text-center printContactDetails">
-                  <span id="PrintMobile"></span> | <span id="PrintEmail"></span>
-                </p>
-                <p id="address"></p>
+            <!-- Career Summary -->
+            <section class="shortSection">
+              <div class="section-header">
+                <strong>Career Summary</strong>
               </div>
+              <ul id="career-summary" class="list-unstyled"></ul>
+            </section>
 
-              <!-- Career Objective -->
-              <section class="shortSection">
-                <div class="section-header">
-                  <strong>Career Objective</strong>
-                </div>
-                <p class="text-muted" id="career-objective"></p>
-              </section>
-
-              <!-- Career Summary -->
-              <section class="shortSection">
-                <div class="section-header">
-                  <strong>Career Summary</strong>
-                </div>
-                <ul id="career-summary" class="list-unstyled"></ul>
-              </section>
-
-              <!-- Professional Certifications -->
-              <section>
-                <div class="section-header">
-                  <strong>Professional Certifications</strong>
-                </div>
-                <table class="table table-bordered">
+            <!-- Professional Certifications -->
+            <section>
+              <div class="section-header">
+                <strong>Professional Certifications</strong>
+              </div>
+              <table class="table table-bordered">
+                <tr>
+                  <td colspan="2">
+                    <strong>Web Application Development with PHP and Frameworks
+                      (WDPF)</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Authority:</strong></td>
+                  <td id="authority"></td>
+                </tr>
+                <tr>
+                  <td><strong>Duration:</strong></td>
+                  <td id="duration"></td>
+                </tr>
+                <tr>
+                  <td><strong>Completed:</strong></td>
+                  <td id="completion-date"></td>
+                </tr>
+              </table>
+              <table class="table table-bordered">
+                <thead>
                   <tr>
-                    <td colspan="2">
-                      <strong
-                        >Web Application Development with PHP and Frameworks
-                        (WDPF)</strong
-                      >
-                    </td>
+                    <th>Modules</th>
+                    <!-- <th>Duration (Hours)</th> -->
                   </tr>
+                </thead>
+                <tbody id="modules-table"></tbody>
+              </table>
+            </section>
+
+            <!-- Professional Experience -->
+            <section class="shortSection">
+              <div class="section-header">
+                <strong>Professional Experience</strong>
+              </div>
+              <div class="px-3 m-0">
+                <p class="m-0 fw-bold" id="PE-Position">
+                  Junior Web Developer
+                  <span class="float-end text-primary PE-Duration">Jun 2024 - Apr 2025</span>
+                </p>
+                <p class="m-0 fw-regular" id="PE-Organization">
+                  <a href="http://www.intelsofts.com" target="_blank">Intellect Software Ltd.</a>
+                </p>
+
+                <!-- <hr class="text-primary"> -->
+                <p class="mt-3 mb-0 fw-bold text-primary">
+                  Responsibilities:
+                </p>
+                <ul>
+                  <li>Coordinated project design and development tasks.</li>
+                  <li>
+                    Developed and maintained web applications using PHP,
+                    Laravel, Livewire, VueJS, MySQL, Tailwind CSS, and JavaScript.
+                  </li>
+                  <li>
+                    Responsible for debugging and troubleshooting web
+                    applications.
+                  </li>
+                </ul>
+              </div>
+              <hr class="text-primary" />
+              <div class="px-3 m-0">
+                <p class="m-0 fw-bold" id="PE-Position">
+                  Remote Web Developer<span class="float-end text-primary PE-Duration">
+                    2023 - Jun 2024</span>
+                </p>
+                <p class="m-0 fw-regular" id="PE-Organization">
+                  Online Marketplaces
+                </p>
+              </div>
+            </section>
+
+            <!-- Software Projects -->
+            <section>
+              <div class="section-header">
+                <strong>Software Projects</strong>
+              </div>
+              <table class="table table-bordered table-striped">
+                <thead>
                   <tr>
-                    <td><strong>Authority:</strong></td>
-                    <td id="authority"></td>
+                    <th>Project Name</th>
+                    <th>Details</th>
+                    <th>Tools & Technologies</th>
+                    <th>Link</th>
                   </tr>
+                </thead>
+                <tbody id="projects-table"></tbody>
+              </table>
+            </section>
+
+            <!-- Education -->
+            <section class="shortSection">
+              <div class="section-header"><strong>Education</strong></div>
+              <table class="table table-bordered">
+                <thead>
                   <tr>
-                    <td><strong>Duration:</strong></td>
-                    <td id="duration"></td>
+                    <th>Degree</th>
+                    <th>Year</th>
                   </tr>
-                  <tr>
-                    <td><strong>Completed:</strong></td>
-                    <td id="completion-date"></td>
-                  </tr>
-                </table>
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Modules</th>
-                      <!-- <th>Duration (Hours)</th> -->
-                    </tr>
-                  </thead>
-                  <tbody id="modules-table"></tbody>
-                </table>
-              </section>
+                </thead>
+                <tbody id="education-table"></tbody>
+              </table>
+            </section>
 
-              <!-- Professional Experience -->
-              <section>
-                <div class="section-header">
-                  <strong>Professional Experience</strong>
-                </div>
-                <div class="px-3 m-0">
-                  <p class="m-0 fw-bold" id="PE-Position">
-                    Junior Web Developer
-                    <span class="float-end text-primary PE-Duration"
-                      >Jun 2024 - Present</span
-                    >
-                  </p>
-                  <p class="m-0 fw-regular" id="PE-Organization">
-                    <a href="http://www.intelsofts.com" target="_blank">Intellect Software Ltd.</a>
-                  </p>
+            <!-- Academic & Other Certificates -->
+            <section class="shortSection printSections">
+              <div class="section-header">
+                <strong><a class="text-white"
+                    href="https://drive.google.com/drive/folders/1Q8B7Fgp79p2XSwZ4S_cjLbyiXgCKTBG1?usp=sharing"
+                    id="academic-certificates">Academic & Other Certificates</a></strong>
+              </div>
+            </section>
 
-                  <!-- <hr class="text-primary"> -->
-                  <p class="mt-3 mb-0 fw-bold text-primary">
-                    Responsibilities:
-                  </p>
-                  <ul>
-                    <li>Coordinated project design and development tasks.</li>
-                    <li>
-                      Developed and maintained web applications using PHP,
-                      Laravel, MySQL, and JavaScript.
-                    </li>
-                    <li>
-                      Responsible for debugging and troubleshooting web
-                      applications.
-                    </li>
-                  </ul>
-                </div>
-                <hr class="text-primary" />
-                <div class="px-3 m-0">
-                  <p class="m-0 fw-bold" id="PE-Position">
-                    Remote Web Developer<span
-                      class="float-end text-primary PE-Duration"
-                    >
-                      2023 - Jun 2024</span
-                    >
-                  </p>
-                  <p class="m-0 fw-regular" id="PE-Organization">
-                    Online Marketplaces
-                  </p>
-                </div>
-              </section>
-
-              <!-- Software Projects -->
-              <section class="shortSection">
-                <div class="section-header">
-                  <strong>Software Projects</strong>
-                </div>
-                <table class="table table-bordered table-striped">
-                  <thead>
-                    <tr>
-                      <th>Project Name</th>
-                      <th>Details</th>
-                      <th>Tools & Technologies</th>
-                      <th>Link</th>
-                    </tr>
-                  </thead>
-                  <tbody id="projects-table"></tbody>
-                </table>
-              </section>
-
-              <!-- Education -->
-              <section class="shortSection">
-                <div class="section-header"><strong>Education</strong></div>
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Degree</th>
-                      <th>Year</th>
-                    </tr>
-                  </thead>
-                  <tbody id="education-table"></tbody>
-                </table>
-              </section>
-
-              <!-- Academic & Other Certificates -->
-              <section class="shortSection printSections">
-                <div class="section-header">
-                  <strong
-                    ><a
-                      class="text-white"
-                      href="https://drive.google.com/drive/folders/12jPCc6LLx6qbKW0QCa2vrDKxC4q1szq-?usp=sharing"
-                      >Academic & Other Certificates</a
-                    ></strong
-                  >
-                </div>
-              </section>
-
-              <!-- Personal Information -->
-              <section>
-                <div class="section-header">
-                  <strong>Personal Information</strong>
-                </div>
-                <table class="table table-bordered">
+            <!-- Personal Information -->
+            <section>
+              <div class="section-header">
+                <strong>Personal Information</strong>
+              </div>
+              <table class="table table-bordered">
+                <tbody>
                   <tr>
                     <td><strong>Father's Name:</strong></td>
                     <td id="father-name"></td>
@@ -533,6 +426,14 @@
                     <td><strong>Nationality:</strong></td>
                     <td id="nationality"></td>
                   </tr>
+                  <tr class="forPrinting">
+                    <td><strong>Phone</strong></td>
+                    <td id="phone"></td>
+                  </tr>
+                  <tr class="forPrinting">
+                    <td><strong>Email:</strong></td>
+                    <td id="gmail"></td>
+                  </tr>
                   <tr>
                     <td><strong>Present Address:</strong></td>
                     <td id="present-address"></td>
@@ -541,84 +442,78 @@
                     <td><strong>Permanent Address:</strong></td>
                     <td id="permanent-address"></td>
                   </tr>
-                </table>
-              </section>
+                </tbody>
+              </table>
+            </section>
 
-              <!-- Language Skills -->
-              <section class="shortSection">
-                <div class="section-header">
-                  <strong>Language Skills</strong>
-                </div>
-                <ul id="Language Skills" class="list-unstyled">
-                  <li><strong>Bengali</strong>: Native</li>
-                  <li><strong>English</strong>: Good</li>
-                </ul>
-              </section>
+            <!-- Language Skills -->
+            <section class="shortSection">
+              <div class="section-header">
+                <strong>Language Skills</strong>
+              </div>
+              <ul id="Language Skills" class="list-unstyled">
+                <li><strong>Bengali</strong>: Native</li>
+                <li><strong>English</strong>: Good</li>
+              </ul>
+            </section>
 
-              <!-- Interests -->
-              <section class="shortSection">
-                <div class="section-header"><strong>Interests</strong></div>
-                <ul id="Interests" class="list-unstyled">
-                  <li>Traveling</li>
-                  <li>Adventure</li>
-                  <li>Repair & Recycle</li>
-                </ul>
-              </section>
+            <!-- Interests -->
+            <section class="shortSection">
+              <div class="section-header"><strong>Interests</strong></div>
+              <ul id="Interests" class="list-unstyled">
+                <li>Traveling</li>
+                <li>Adventure</li>
+                <li>Repair & Recycle</li>
+              </ul>
+            </section>
 
-              <!-- Reference -->
-              <section class="shortSection">
-                <div class="section-header"><strong>Reference</strong></div>
-                <table class="table table-bordered">
-                  <tr>
-                    <td>
-                      <strong>Md. Tawhid Imdad</strong>
-                      <p>
-                        CTO, <a href="http://www.intelsofts.com/" target="_blank">Intellect Software Ltd.</a> <br />
-                        Phone: <a href="callto:01985426948">01985426948</a><br />
-                        Email:
-                        <a href="mailto:tawhidimdad@gmail.com"
-                          >tawhidimdad@gmail.com</a
-                        ><br />
-                        Relation: Academic
-                      </p>
-                    </td>
-                    <td>
-                      <strong>Mohammad Moshaidul Islam</strong>
-                      <p>
-                        Project Consultant, IsDB-BISEW IT Scholarship Project<br />
-                        Phone: <a href="callto:01711071219">01711071219</a
-                        ><br />
-                        Email:
-                        <a href="mailto:moshaidul@gmail.com"
-                          >moshaidul@gmail.com</a
-                        ><br />
-                        Relation: Academic
-                      </p>
-                    </td>
-                  </tr>
-                </table>
-              </section>
+            <!-- Reference -->
+            <section class="shortSection">
+              <div class="section-header"><strong>Reference</strong></div>
+              <table class="table table-bordered">
+                <tr>
+                  <td>
+                    <strong>Md. Tawhid Imdad</strong>
+                    <p>
+                      CTO, <a href="http://www.intelsofts.com/" target="_blank">Intellect Software Ltd.</a> <br />
+                      Phone: <a href="callto:01985426948">01985426948</a><br />
+                      Email:
+                      <a href="mailto:tawhidimdad@gmail.com">tawhidimdad@gmail.com</a><br />
+                      Relation: Academic
+                    </p>
+                  </td>
+                  <td>
+                    <strong>Mohammad Moshaidul Islam</strong>
+                    <p>
+                      Project Consultant, IsDB-BISEW IT Scholarship Project<br />
+                      Phone: <a href="callto:01711071219">01711071219</a><br />
+                      Email:
+                      <a href="mailto:moshaidul@gmail.com">moshaidul@gmail.com</a><br />
+                      Relation: Academic
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </section>
 
-              <!-- Declaration -->
-              <section class="shortSection">
-                <div class="section-header"><strong>Declaration</strong></div>
-                <p class="text-muted" id="declaration">
-                  I hereby declare that the information provided in this resume
-                  is true to the best of my knowledge. In the event of any
-                  information being found false, my candidature stands to be
-                  cancelled.
-                </p>
-              </section>
-
-              <!-- Signature -->
-              <section
-                id="signature-section"
-                class="signature-section d-none float-end pe-5"
-              >
-                <!-- <img id="signature-image" src="" alt="Signature" /> -->
-                <p id="signature-name"></p>
-                <p id="signature-date"></p>
-              </section>
+            <!-- Declaration -->
+            <section class="shortSection" id="declaration">
+              <div class="section-header"><strong>Declaration</strong></div>
+              <p class="text-muted" id="declaration">
+                I hereby declare that the information provided in this resume
+                is true to the best of my knowledge. In the event of any
+                information being found false, my candidature stands to be
+                cancelled.
+              </p>
+            </section>
+            
+            <div class="spacer" id="spacer"></div>
+            <!-- Signature -->
+            <section id="signature-section" class="signature-section float-end pe-5">
+              <!-- <img id="signature-image" src="" alt="Signature" /> -->
+              <p id="signature-name"></p>
+              <p id="signature-date"></p>
+            </section>
           </div>
         </div>
       </div>
@@ -644,12 +539,13 @@
       position: "Full Stack Web Developer",
       skills: [
         "Php",
-        "MySQL",
         "Laravel",
+        "Ajax",
+        "OOP",
+        "MySQL",
+        "REST API",
+        "VueJS",
         "JavaScript",
-        "jQuery",
-        "Vue",
-        "React",
         "GitHub",
       ],
       mobile: "01713227490",
@@ -658,13 +554,15 @@
       linkedin: "https://www.linkedin.com/in/helalmhu/",
       github: "https://github.com/MHU-Helal",
       portfolio: "https://dev.decodemh.com",
+      academicCertificates: "https://drive.google.com/drive/folders/1Q8B7Fgp79p2XSwZ4S_cjLbyiXgCKTBG1?usp=sharing",
       address: "338/1, East-Nakhalpara, Tejgaon, Dhaka-1215",
       careerObjective:
-        "Passionate PHP, MySQL, Laravel, and React.js developer with a strong commitment to continuous learning and self-improvement.",
+        "To obtain the position of Support Engineer at weDevs, where I can utilize my strong foundation in PHP, WordPress, and customer support to help users resolve technical issues, improve product experience, and contribute to building world-class WordPress solutions. I seek a collaborative, remote-friendly environment where I can grow my skills and make a meaningful impact.",
       careerSummary: [
-        "2+ years of experience in developing web applications.",
-        "Expertise in Raw PHP, Laravel, MySQL, WordPress, ReactJS, VueJS, JavaScript, jQuery, and Ajax.",
+        "1+ years of experience in developing web applications.",
+        "Expertise in Raw PHP, Laravel, VueJS, MySQL, REST APIs, JavaScript, jQuery, and Ajax.",
         "Troubleshooting, debugging, and problem-solving capabilities.",
+        "Proficient in PHP, JavaScript, CSS, MySQL, and using browser dev tools for debugging. Experienced in live chat and ticket-based customer support with a strong focus on clear communication, documentation, and a user-first mindset. Passionate about contributing to knowledge bases and improving product reliability and performance."
       ],
       certifications: {
         authority: "IsDB-BISEW",
@@ -688,21 +586,21 @@
         {
           name: "Manufacturing ERP",
           details:
-            "Accounts Module for three different versions: Laravel, Laravel & React, and Laravel & VueJS.",
+            "Accounts Module in different versions: Laravel, Laravel & VueJs",
           tools:
-            "Laravel, VueJS, React, MySQL, jQuery, JavaScript, HTML, CSS3, Bootstrap",
+            "Laravel, VueJS, MySQL, jQuery, JavaScript, HTML, CSS3, Bootstrap",
           link: "http://laravel.decodemh.com",
-          link2: "http://dev.decodemh.com/laravel-react",
-          link3: "http://dev.decodemh.com/vuejs",
+          link2: "http://laravel.decodemh.com/VueJS",
+          link3: "http://laravel.decodemh.com/ReactJS",
         },
         {
           name: "Hospital Management",
           details:
-            "Hospital Management System with features like Patients, Doctors, Appointments, Accounts, Billing, and Reports, available in two versions: Raw PHP, and Php & React.",
+            "Hospital System with features like Patients, Doctors, Appointments, and Reports, available in two versions: Raw PHP, and Php & React.",
           tools:
             "PHP, React, MySQL, jQuery, JavaScript, HTML, CSS3, Bootstrap",
-          link: "https://reviveme.decodemh.com/",
-          link2: "http://dev.decodemh.com/react",
+          link: "https://reviveme.decodemh.com",
+          link2: "https://reviveme.decodemh.com/ReactJS",
         },
         {
           name: "WordPress Website",
@@ -711,13 +609,6 @@
           tools:
             "WordPress, Elementor",
           link: "http://wp.decodemh.com",
-        },
-        {
-          name: "Online Resume",
-          details:
-            "Resume design for easy sharing. Easily updatable by simply updating the JavaScript Variable!",
-          tools: "JavaScript, HTML, CSS3, Bootstrap",
-          link: "https://mhu-helal.github.io/resume/",
         },
         {
           name: "Local Sahri & Iftar Time App",
@@ -753,8 +644,9 @@
         },
       ],
       education: [
+        { degree: "Degree (Web Application Development)", year: "2024-2025" },
         { degree: "MBA (Major in Finance)", year: "2022 - 2023" },
-        { degree: "BBA", year: "2016 - 2017" },
+        { degree: "BBA (Major in Finance)", year: "2016 - 2017" },
         { degree: "HSC (Business Studies)", year: "2014 - 2016" },
         { degree: "SSC (Business Studies)", year: "2012" },
       ],
@@ -764,6 +656,8 @@
         dob: "16 July, 1998",
         bloodGroup: "B Positive (B+)",
         nationality: "Bangladeshi",
+        phone: "01713227490",
+        email: "dev.m.helal@gmail.com",
         presentAddress: "338/1, East-Nakhalpara, Tejgaon, Dhaka-1215",
         permanentAddress: "Sobujpara, Brahmonpara, Cumilla, Chattogram",
       },
@@ -812,10 +706,10 @@
       document.getElementById("github").innerText = "GitHub";
       document.getElementById("github").setAttribute("href", data.github);
 
-      document.getElementById("portfolio").innerText = "Portfolio";
-      document
-        .getElementById("portfolio")
-        .setAttribute("href", data.portfolio);
+      // document.getElementById("portfolio").innerText = "Portfolio";
+      // document
+      //   .getElementById("portfolio")
+      //   .setAttribute("href", data.portfolio);
 
       // Update Career Objective
       document.getElementById("career-objective").innerText =
@@ -836,6 +730,8 @@
         data.certifications.duration;
       document.getElementById("completion-date").innerText =
         data.certifications.completionDate;
+      document.getElementById("academic-certificates").href =
+        data.academicCertificates;
 
       const modulesTable = document.getElementById("modules-table");
       const row = document.createElement("tr");
@@ -868,19 +764,15 @@
       });
 
       // Update Personal Information
-      document.getElementById("father-name").innerText =
-        data.personalInfo.fatherName;
-      document.getElementById("mother-name").innerText =
-        data.personalInfo.motherName;
+      document.getElementById("father-name").innerText = data.personalInfo.fatherName;
+      document.getElementById("mother-name").innerText = data.personalInfo.motherName;
       document.getElementById("dob").innerText = data.personalInfo.dob;
-      document.getElementById("blood-group").innerText =
-        data.personalInfo.bloodGroup;
-      document.getElementById("nationality").innerText =
-        data.personalInfo.nationality;
-      document.getElementById("present-address").innerText =
-        data.personalInfo.presentAddress;
-      document.getElementById("permanent-address").innerText =
-        data.personalInfo.permanentAddress;
+      document.getElementById("blood-group").innerText = data.personalInfo.bloodGroup;
+      document.getElementById("nationality").innerText = data.personalInfo.nationality;
+      document.getElementById("phone").innerText = data.personalInfo.phone;
+      document.getElementById("gmail").innerText = data.personalInfo.email;
+      document.getElementById("present-address").innerText = data.personalInfo.presentAddress;
+      document.getElementById("permanent-address").innerText = data.personalInfo.permanentAddress;
 
       // Handle Passport Photo
       if (data.passportPhoto) {
@@ -893,10 +785,10 @@
         // document.getElementById("signature-image").src = data.signatureImage;
         document.getElementById("signature-name").innerText =
           data.signatureName;
-        document.getElementById("signature-date").innerText =formattedDate;
-        document
-          .getElementById("signature-section")
-          .classList.remove("d-none");
+        document.getElementById("signature-date").innerText = formattedDate;
+        // document
+        //   .getElementById("signature-section")
+        //   .classList.remove("d-none");
         // document.getElementById("signature-section").removeChild('img');
       }
     }
@@ -918,6 +810,32 @@
 
     // Add an event listener to trigger the function before printing
     window.onbeforeprint = prepareForPrint();
+
+
+    window.onload = function () {
+      // Only apply this logic when preparing to print
+      if (window.matchMedia("print").matches) {
+        const signature = document.getElementById('signature-section');
+        const spacer = document.getElementById('spacer');
+        const pageHeight = window.innerHeight;
+
+        const sigRect = signature.getBoundingClientRect();
+        const spaceBelow = pageHeight - sigRect.top;
+
+        const threshold = 100; // px from bottom to consider "near bottom"
+
+        // If there's too much space below the signature, push it down
+        if (spaceBelow > threshold) {
+          const extraSpace = spaceBelow - threshold;
+          spacer.style.height = extraSpace + "px !important";
+        }
+      }
+    };
+
+    // Ensure logic also runs when the print dialog is opened
+    window.onbeforeprint = function () {
+      window.onload();
+    };
   </script>
 </body>
 
