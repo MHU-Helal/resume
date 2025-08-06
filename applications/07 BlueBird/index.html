@@ -10,7 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Delius&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Gamja+Flower&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Splash&family=Water+Brush&display=swap"
     rel="stylesheet" />
-  <title>Md. Helal Uddin - Full Stack Web Developer</title>
+  <title>Md. Helal Uddin - Full-Stack Web-Developer</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <style>
@@ -30,15 +30,13 @@
         background: url(BG.jpg) no-repeat center center fixed;*/
     }
 
-    /* #resumeBody{
-        background: url(BG.jpg) no-repeat center center fixed;
-      } */
 
     .contactDetails {
       display: block;
     }
 
-    .printContactDetails, .forPrinting {
+    .printContactDetails,
+    .forPrinting {
       display: none;
     }
 
@@ -61,10 +59,6 @@
       margin-bottom: 5px;
     }
 
-    section>div {
-      margin-bottom: 5px;
-    }
-
     #skills {
       font-size: 16px;
     }
@@ -75,11 +69,12 @@
     }
 
     li::marker {
-      color: #007bff;
+      /* color: #007bff; */
+      color: gray;
     }
 
     .section-header {
-      background-color: #007bff;
+      background-color: gray;
       color: white;
       padding: 8px 16px;
       margin-top: 20px;
@@ -87,9 +82,10 @@
     }
 
     .photo-section {
-      width: 140px;
-      height: 140px;
-      border-radius: 15%;
+      width: 4.5cm;
+      height: 5.5cm;
+      border-radius: 5%;
+      border: 3px solid rgb(243, 243, 243);
       overflow: hidden;
       margin-top: 30px;
       margin-right: 15px;
@@ -104,24 +100,7 @@
     .signature-section {
       text-align: center;
       margin-top: 50px;
-      /* position: relative; */
-    }
-
-    li {
-      list-style-type: circle;
-      margin-left: 25px;
-    }
-
-    li::marker {
-      color: #007bff;
-    }
-
-    .section-header {
-      background-color: #007bff;
-      color: white;
-      padding: 8px 16px;
-      margin-top: 20px;
-      border-radius: 5px;
+      position: relative;
     }
 
     .signature-section img {
@@ -131,6 +110,17 @@
       /* background: url(BG.jpg) no-repeat center center fixed; */
       /* filter:blur(1px) */
       /* mix-blend-mode:overlay; */
+    }
+
+    #signature-name {
+      font-family: "Gamja Flower";
+      font-size: 24px;
+    }
+
+    #signature-date {
+      position: absolute;
+      top: 30px;
+      left: 10px;
     }
 
     .content-section {
@@ -164,69 +154,22 @@
       /* Prevent content from breaking within a section */
     }
 
-    .photo-section {
-      width: 140px;
-      height: 140px;
-      border-radius: 15%;
-      overflow: hidden;
-      margin-top: 30px;
-      margin-right: 15px;
-    }
-
-    .photo-section img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .signature-section {
-      text-align: center;
-      margin-top: 50px;
-      position: relative;
-    }
-
-    #signature-name {
-      font-family: "Gamja Flower";
-      font-size: 24px;
-    }
-
-    #signature-date {
-      position: absolute;
-      top: 30px;
-      left: 10px;
-    }
-
-    .signature-section img {
-      width: 100px;
-      height: 40px;
-      object-fit: contain;
-      /* background: url(BG.jpg) no-repeat center center fixed; */
-      /* filter:blur(1px) */
-      /* mix-blend-mode:overlay; */
-    }
-
-    .content-section {
-      margin-top: 20px;
+    #career-objective {
+      text-align: justify;
     }
 
     #declaration {
       text-align: center;
     }
 
-    .shortSection {
-      page-break-before: auto !important;
-      page-break-after: auto !important;
-      break-inside: avoid !important;
-      /* Prevent content from breaking within a section */
-    }
-
     /* Print styles */
     @media print {
-      .forPrinting{
+      .forPrinting {
         display: block;
         width: 100%;
       }
-      .forPrinting td{
+
+      .forPrinting td {
         width: 100%;
       }
     }
@@ -281,7 +224,7 @@
             </section>
 
             <!-- Professional Certifications -->
-            <section>
+            <!-- <section>
               <div class="section-header">
                 <strong>Professional Certifications</strong>
               </div>
@@ -289,10 +232,10 @@
                 <tr>
                   <td colspan="2">
                     <strong>Web Application Development with PHP and Frameworks
-                      (WDPF)</strong>
+                      (WDPF) By <a href="https://isdb-bisew.org/it-scholarship-programme/it-scholarship-programme-overview">IsDB-BISEW</a></strong>
                   </td>
-                </tr>
-                <tr>
+                </tr> -->
+                <!-- <tr>
                   <td><strong>Authority:</strong></td>
                   <td id="authority"></td>
                 </tr>
@@ -303,17 +246,17 @@
                 <tr>
                   <td><strong>Completed:</strong></td>
                   <td id="completion-date"></td>
-                </tr>
-              </table>
-              <table class="table table-bordered">
+                </tr> -->
+              <!-- </table> -->
+              <!-- <table class="table table-bordered">
                 <thead>
                   <tr>
                     <th>Modules</th>
-                    <!-- <th>Duration (Hours)</th> -->
+                    
                   </tr>
                 </thead>
                 <tbody id="modules-table"></tbody>
-              </table>
+              </table> -->
             </section>
 
             <!-- Professional Experience -->
@@ -327,7 +270,7 @@
                   <span class="float-end text-primary PE-Duration">May 2025 - Present</span>
                 </p>
                 <p class="m-0 fw-regular" id="PE-Organization">
-                  <a href="http://www.sebpo.com" target="_blank">SEBPO</a>
+                  <a href="https://sebpo.com/" target="_blank">SEBPO Bangladesh</a>
                 </p>
 
                 <!-- <hr class="text-primary"> -->
@@ -335,15 +278,16 @@
                   Responsibilities:
                 </p>
                 <ul>
-                  <li>Developing new projects using JavaScript, PHP, MySQL, WordPress, Laravel.</li>
-                  <li>Working with team members to solve problems and collaboration.</li>
-                  <li>Adding values with skills & knowledge.</li>
+                  <li>WordPress Customization</li>
+                  <li>WordPress WordPress Theme & Plugin Development</li>
+                  <li>
+                    Responsible for debugging and troubleshooting web applications.
+                  </li>
                 </ul>
               </div>
-              <hr class="text-primary" />
               <div class="px-3 m-0">
                 <p class="m-0 fw-bold" id="PE-Position">
-                  Junior Web Developer
+                  Full-Stack Web-Developer
                   <span class="float-end text-primary PE-Duration">Jun 2024 - May 2025</span>
                 </p>
                 <p class="m-0 fw-regular" id="PE-Organization">
@@ -358,7 +302,7 @@
                   <li>Coordinated project design and development tasks.</li>
                   <li>
                     Developed and maintained web applications using PHP,
-                    Laravel, Livewire, VueJS, MySQL, Tailwind CSS, and JavaScript.
+                    Laravel, VueJS, MySQL, Tailwind CSS, and JavaScript.
                   </li>
                   <li>
                     Responsible for debugging and troubleshooting web
@@ -373,13 +317,13 @@
                     2023 - Jun 2024</span>
                 </p>
                 <p class="m-0 fw-regular" id="PE-Organization">
-                  Online Marketplaces
+                  Online Marketplaces (Fiverr / Upwork)
                 </p>
               </div>
             </section>
 
             <!-- Software Projects -->
-            <section>
+            <section  class="shortSection">
               <div class="section-header">
                 <strong>Software Projects</strong>
               </div>
@@ -414,8 +358,8 @@
             <section class="shortSection printSections">
               <div class="section-header">
                 <strong><a class="text-white"
-                    href="https://drive.google.com/drive/folders/12jPCc6LLx6qbKW0QCa2vrDKxC4q1szq-?usp=sharing"
-                    id="academic-certificates">Academic & Other Certificates</a></strong>
+                    href="https://drive.google.com/drive/folders/1Q8B7Fgp79p2XSwZ4S_cjLbyiXgCKTBG1?usp=sharing"
+                    id="academic-certificates">Academic & Other Professional Certificates</a></strong>
               </div>
             </section>
 
@@ -438,19 +382,19 @@
                     <td><strong>Date of Birth:</strong></td>
                     <td id="dob"></td>
                   </tr>
-                  <tr>
+                  <!-- <tr>
                     <td><strong>Blood Group:</strong></td>
                     <td id="blood-group"></td>
-                  </tr>
+                  </tr> -->
                   <tr>
                     <td><strong>Nationality:</strong></td>
                     <td id="nationality"></td>
                   </tr>
-                  <tr class="forPrinting">
+                  <tr>
                     <td><strong>Phone</strong></td>
                     <td id="phone"></td>
                   </tr>
-                  <tr class="forPrinting">
+                  <tr>
                     <td><strong>Email:</strong></td>
                     <td id="gmail"></td>
                   </tr>
@@ -503,9 +447,9 @@
                     </p>
                   </td>
                   <td>
-                    <strong>Morshed Habib</strong>
+                    <strong>Morshed Habib Shohel</strong>
                     <p>
-                      CTO, <a href="http://www.intelsofts.com/" target="_blank">Intellect Software Ltd.</a> <br />
+                      Mentor, IsDB-BISEW IT Scholarship Programme<br />
                       Phone: <a href="callto:01735254295">01735254295</a><br />
                       Email:
                       <a href="mailto:mhsohel017@gmail.com">mhsohel017@gmail.com</a><br />
@@ -513,11 +457,12 @@
                     </p>
                   </td>
                   <td>
-                    <strong>Md. Moshaidul Islam</strong>
+                    <strong>Mohammad Moshaidul Islam</strong>
                     <p>
-                      Project Consultant, <br>IsDB-BISEW IT Scholarship Project<br />
+                      Project Consultant, IsDB-BISEW IT Scholarship Project<br />
                       Phone: <a href="callto:01711071219">01711071219</a><br />
-                      Email: <a href="mailto:moshaidul@gmail.com">moshaidul@gmail.com</a><br />
+                      Email:
+                      <a href="mailto:moshaidul@gmail.com">moshaidul@gmail.com</a><br />
                       Relation: Academic
                     </p>
                   </td>
@@ -535,7 +480,7 @@
                 cancelled.
               </p>
             </section>
-            
+
             <div class="spacer" id="spacer"></div>
             <!-- Signature -->
             <section id="signature-section" class="signature-section float-end pe-5">
@@ -550,6 +495,9 @@
   </div>
 
   <script>
+    const position="PHP/Laravel Developer";
+    const company="BitBirds";
+    const requiredSkills="PHP, Laravel, JavaScript";
     const date = new Date();
 
     const options = {
@@ -569,13 +517,13 @@
       skills: [
         "Php",
         "Laravel",
-        "Ajax",
+        "JavaScript",
         "OOP",
         "MySQL",
-        "REST API",
         "VueJS",
-        "JavaScript",
-        "GitHub",
+        "Ajax",
+        "REST API",
+        "GitHub"
       ],
       mobile: "01713227490",
       email: "dev.m.helal@gmail.com",
@@ -586,12 +534,11 @@
       academicCertificates: "https://drive.google.com/drive/folders/1Q8B7Fgp79p2XSwZ4S_cjLbyiXgCKTBG1?usp=sharing",
       address: "338/1, East-Nakhalpara, Tejgaon, Dhaka-1215",
       careerObjective:
-        "Creating new things & utilize my strong foundation in PHP, WordPress, and customer support to help users resolve technical issues, improve product experience, and contribute to building world-class WordPress solutions. I seek a collaborative, remote-friendly environment where I can grow my skills and make a meaningful impact.",
+        `To obtain the position of ${position} at ${company}, where I can utilize my strong foundation in ${requiredSkills} and support to resolve technical issues, improve product experience, and contribute to building web-solutions. I seek a collaborative, friendly environment where I can grow my skills with new techs and make a meaningful impact.`,
       careerSummary: [
-        "2+ years of experience in developing web applications.",
-        "Expertise in Raw PHP, Laravel, VueJS, MySQL, REST APIs, JavaScript, jQuery, and Ajax.",
-        "Troubleshooting, debugging, and problem-solving capabilities.",
-        "Proficient in PHP, JavaScript, CSS, MySQL, and using browser dev tools for debugging. Experienced in live chat and ticket-based customer support with a strong focus on clear communication, documentation, and a user-first mindset. Passionate about contributing to knowledge bases and improving product reliability and performance."
+        "1+ years of experience in developing web applications.",
+        "Expertise in PHP, Laravel, JavaScript, jQuery, Ajax, REST API, MySQL, Bootstrap, Tailwind CSS...",
+        "Troubleshooting, debugging, and problem-solving capabilities."
       ],
       certifications: {
         authority: "IsDB-BISEW",
@@ -631,27 +578,27 @@
           link: "https://reviveme.decodemh.com",
           link2: "https://reviveme.decodemh.com/ReactJS",
         },
-        {
-          name: "WordPress Website",
-          details:
-            "Dynamic WordPress Website With Elementor",
-          tools:
-            "WordPress, Elementor",
-          link: "http://wp.decodemh.com",
-        },
-        {
-          name: "Local Sahri & Iftar Time App",
-          details:
-            "App to show the start end time of Sahri & Fazr Salah. Start time of Iftar. Works 365 days.",
-          tools: "JavaScript, HTML, CSS3, Bootstrap",
-          link: "https://schooling.decodemh.com/apps/siamSchedule.html",
-        },
-        {
-          name: "7 Segment Clock",
-          details: "7 Segment clock as a desktop screen",
-          tools: "JavaScript, HTML, CSS3, Bootstrap",
-          link: "http://apps.decodemh.com",
-        },
+        // {
+        //   name: "WordPress Website",
+        //   details:
+        //     "Dynamic WordPress Website With Elementor",
+        //   tools:
+        //     "WordPress, Elementor",
+        //   link: "http://wp.decodemh.com",
+        // },
+        // {
+        //   name: "Local Sahri & Iftar Time App",
+        //   details:
+        //     "App to show the start end time of Sahri & Fazr Salah. Start time of Iftar. Works 365 days.",
+        //   tools: "JavaScript, HTML, CSS3, Bootstrap",
+        //   link: "https://schooling.decodemh.com/apps/siamSchedule.html",
+        // },
+        // {
+        //   name: "7 Segment Clock",
+        //   details: "7 Segment clock as a desktop screen",
+        //   tools: "JavaScript, HTML, CSS3, Bootstrap",
+        //   link: "http://apps.decodemh.com",
+        // },
         {
           name: "Learning letters & numbers in Arabic, Bengali, English",
           details:
@@ -676,8 +623,8 @@
         { degree: "Degree (Web Application Development)", year: "2024-2025" },
         { degree: "MBA (Major in Finance)", year: "2022 - 2023" },
         { degree: "BBA (Major in Finance)", year: "2016 - 2017" },
-        { degree: "HSC (Business Studies)", year: "2014 - 2016" },
-        { degree: "SSC (Business Studies)", year: "2012" },
+        // { degree: "HSC (Business Studies)", year: "2014 - 2016" },
+        // { degree: "SSC (Business Studies)", year: "2012" },
       ],
       personalInfo: {
         fatherName: "Abdul Hamid",
@@ -690,15 +637,13 @@
         presentAddress: "338/1, East-Nakhalpara, Tejgaon, Dhaka-1215",
         permanentAddress: "Sobujpara, Brahmonpara, Cumilla, Chattogram",
       },
-      passportPhoto: "", // If there's no photo, leave it empty or null
-      signatureImage: "", // Same for signature image
+      passportPhoto: "",
+      signatureImage: "",
       signatureName: "Md. Helal Uddin",
       signatureDate: "26 March, 2025",
     };
 
-    // Function to populate the resume content dynamically
     function updateResume() {
-      // Update Name and Position
       document.getElementById("name").innerText = data.name;
       document.getElementById("position").innerText = data.position;
       let skills = "";
@@ -711,7 +656,6 @@
       })
       document.getElementById("skills").innerText = `[${skills}]`;
 
-      // Update Contact Information
       document.getElementById("mobile").innerText = "Mobile";
       document
         .getElementById("mobile")
@@ -735,20 +679,9 @@
       document.getElementById("github").innerText = "GitHub";
       document.getElementById("github").setAttribute("href", data.github);
 
-      // document.getElementById("portfolio").innerText = "Portfolio";
-      // document
-      //   .getElementById("portfolio")
-      //   .setAttribute("href", data.portfolio);
-      // document.getElementById("portfolio").innerText = "Portfolio";
-      // document
-      //   .getElementById("portfolio")
-      //   .setAttribute("href", data.portfolio);
-
-      // Update Career Objective
       document.getElementById("career-objective").innerText =
         data.careerObjective;
 
-      // Update Career Summary
       const summaryList = document.getElementById("career-summary");
       data.careerSummary.forEach((item) => {
         const listItem = document.createElement("li");
@@ -756,24 +689,23 @@
         summaryList.appendChild(listItem);
       });
 
-      // Update Certifications
-      document.getElementById("authority").innerText =
-        data.certifications.authority;
-      document.getElementById("duration").innerText =
-        data.certifications.duration;
-      document.getElementById("completion-date").innerText =
-        data.certifications.completionDate;
+      // document.getElementById("authority").innerText =
+      //   data.certifications.authority;
+      // document.getElementById("duration").innerText =
+      //   data.certifications.duration;
+      // document.getElementById("completion-date").innerText =
+      //   data.certifications.completionDate;
       document.getElementById("academic-certificates").href =
         data.academicCertificates;
 
-      const modulesTable = document.getElementById("modules-table");
-      const row = document.createElement("tr");
-      let moduleNames = "";
-      data.certifications.modules.forEach((module) => {
-        moduleNames += `${module.name}, `;
-      });
-      row.innerHTML = `<td>${moduleNames}</td>`;
-      modulesTable.appendChild(row);
+      // const modulesTable = document.getElementById("modules-table");
+      // const row = document.createElement("tr");
+      // let moduleNames = "";
+      // data.certifications.modules.forEach((module) => {
+      //   moduleNames += `${module.name}, `;
+      // });
+      // row.innerHTML = `<td>${moduleNames}</td>`;
+      // modulesTable.appendChild(row);
 
       // Update Projects
       const projectsTable = document.getElementById("projects-table");
@@ -800,7 +732,7 @@
       // document.getElementById("father-name").innerText = data.personalInfo.fatherName;
       // document.getElementById("mother-name").innerText = data.personalInfo.motherName;
       document.getElementById("dob").innerText = data.personalInfo.dob;
-      document.getElementById("blood-group").innerText = data.personalInfo.bloodGroup;
+      // document.getElementById("blood-group").innerText = data.personalInfo.bloodGroup;
       document.getElementById("nationality").innerText = data.personalInfo.nationality;
       document.getElementById("phone").innerText = data.personalInfo.phone;
       document.getElementById("gmail").innerText = data.personalInfo.email;
@@ -819,10 +751,6 @@
         document.getElementById("signature-name").innerText =
           data.signatureName;
         document.getElementById("signature-date").innerText = formattedDate;
-        // document
-        //   .getElementById("signature-section")
-        //   .classList.remove("d-none");
-        // document.getElementById("signature-section").removeChild('img');
       }
     }
 
@@ -833,15 +761,10 @@
       // Get the container and card elements
       const container = document.getElementById("resumeBody");
       const card = document.getElementById("resumeContents");
-      // const contacts = document.getElementsByClassName("printContactDetails");
-
-      // Remove classes that apply layout styling (like width and padding)
       container.classList.remove("py-5", "container");
       card.classList.remove("shadow-lg", "border-0", "rounded");
-      // contacts.classList.remove("d-none");
     }
 
-    // Add an event listener to trigger the function before printing
     window.onbeforeprint = prepareForPrint();
 
 
@@ -857,7 +780,6 @@
 
         const threshold = 100; // px from bottom to consider "near bottom"
 
-        // If there's too much space below the signature, push it down
         if (spaceBelow > threshold) {
           const extraSpace = spaceBelow - threshold;
           spacer.style.height = extraSpace + "px !important";
